@@ -652,10 +652,16 @@ a, a:visited {
 
 /* LOGO ABAJO */
 
+
 .logo-big {
-    align-self: center;
-    margin-bottom: 5%;
-}
+   
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    
+     
+ }
 
 /* FOOTER */
 

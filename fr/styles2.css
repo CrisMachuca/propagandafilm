@@ -654,9 +654,14 @@ a, a:visited {
 /* LOGO ABAJO */
 
 .logo-big {
-    align-self: center;
-    margin-bottom: 5%;
-}
+   
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    
+     
+ }
 
 /* FOOTER */
 
@@ -690,10 +695,17 @@ footer {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
-.instalink {
+.instalink , .instalink:visited {
     text-decoration: underline;
     color: #FFFFFFB3;
+    display: inline-block;
+    line-height: 1.5em;
 }
+
+.footer-text a, .footer-text a:visited {
+    color: #FFFFFFB3;;
+}
+
 
 /* RESPONSIVE */
 
