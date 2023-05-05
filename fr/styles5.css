@@ -458,7 +458,7 @@ a, a:visited {
    .texto-heading {
     text-align: center;
     justify-content: center;
-    padding: 3% 14% 0 14%;
+    padding: 3% 14% 3% 14%;
     font-family: 'metropolis';
     font-size: 1.2em;
     font-weight: lighter;
@@ -494,15 +494,18 @@ a, a:visited {
       
    }
    
-   .dream-text, .dream-text a {
-     padding-top: 3%;
+   .dream-text a {
+     
      color: #282828;
      font-size: 1.2em;
      font-weight: 100;
      text-align: center;
      text-decoration: underline;
      text-underline-offset: 10px;
-     padding-bottom: 10%;
+     position: relative;
+     bottom: 20px;
+     padding-top: 40px;
+     
    }
    
    
