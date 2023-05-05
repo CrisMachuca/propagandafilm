@@ -463,7 +463,7 @@ a, a:visited {
     font-size: 1.2em;
     font-weight: lighter;
      line-height : 30px;
-     color: #000;
+     color: #282828;
    }
    .galeria {
      width: 100%;
@@ -484,7 +484,6 @@ a, a:visited {
    .dream img{
      height: 78%; /* con esto he conseguido arreglar la tercera imagen!!!!*/
      width: 100%;
-     
      border-radius: 5px;
      margin-bottom: 10px;
    }
@@ -497,9 +496,9 @@ a, a:visited {
    
    .dream-text, .dream-text a {
      padding-top: 3%;
-     color: #000;
+     color: #282828;
      font-size: 1.2em;
-     font-weight: 200;
+     font-weight: 100;
      text-align: center;
      text-decoration: underline;
      text-underline-offset: 10px;
@@ -558,10 +557,15 @@ a, a:visited {
  /* FIN DE GALERIA */
  
  /* LOGO ABAJO */
- 
+
  .logo-big {
-     align-self: center;
-     margin-bottom: 5%;
+   
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    
+     
  }
  
  /* FOOTER */
@@ -655,57 +659,127 @@ a, a:visited {
    
    }
    
- @media(max-width: 899px){ /*la web original es de hasta 899px*/
-     /*HEADER*/
-     .mostrar-menu, .esconder-menu{
-         display: block;
-     }
-     .mostrar-menu {
-         position:absolute;
-         right: 5%;
-     }
-     nav {
-         background-color: #fff;
+   @media(max-width: 899px){ /*la web original es de hasta 899px*/
+    /*HEADER*/
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+    .mostrar-menu {
+        position:absolute;
+        right: 5%;
+        color: #3D3E3B;
+    }
+    
+    .menu{
+        position: fixed;
+        display:flex;
+        width: 80%;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+        background-color: #fff;
+        text-align: left;
+        padding: 100px 0;
+        z-index: 100;
+        
+    }
+    nav ul {
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        padding: 25px 25px;
+        margin: 0 ;
+        
+    }
+    .menu a{
+        display:flex;
+        padding: 20px 20px 20px 0;
+        color: rgb(190, 188, 188);
+    }
+    nav ul li{
+        border-bottom: 1px solid rgb(190, 188, 188);
+        width: 70vw;
        
-     }
-     .menu{
-         position: fixed;
-         display:flex;
-         width: 80%;
-         height: 100vh;
-         right: -100%;
-         top: 0;
-         background-color: #fff;
-         text-align: left;
-         padding: 100px 0;
-         z-index: 100;
-         
-     }
-     nav ul {
-         display: block;
-         padding: 20px;
-         
-     }
-     .menu a{
-         display: block;
-         padding: 20px;
-     }
-     nav ul li{
-         border-bottom: 1px solid grey;
-     }
-     .esconder-menu{
-         position: absolute;
-         top: 40px;
-         right: 40%;
-         color: grey;
-     }
-     #check:checked ~ .menu{
-         right: 0%;
-     }
-     .top {
-         display: none;
-     }
- }
- 
- 
+        
+    }
+    .dropdown {
+        position: relative;
+        height: 6vh;
+        
+    }
+    .dropdown a i {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 15px;
+        right: 10px;   
+	    font-size: 18px;
+    }
+    
+    .dropdown a i:active {
+        transform: rotate(0deg);
+    }
+   
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        top: 5px;
+        width: 100%;
+        box-shadow: none;
+        margin-left: 5px;
+        transition: 0.8s;
+        padding-top: 2px;
+        
+    }
+    .dropdown-content a {
+        font-size: 14px;
+        font-family: 'josefine';
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .dropdown-content::before {
+        display: none;
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .submenu-open {
+        max-height: 1000px;
+      }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 10%;
+        color: rgb(190, 188, 188);
+        font-size: 2em;
+    }
+    #check:checked ~ .menu{
+        right: 0%;
+    }
+    .top {
+        display: none;
+    }
+    .language-menu-hamburguesa {
+        display: block;
+    }
+    .dropbtn {
+        margin: auto;
+        padding: 0;
+        
+        
+    }
+    .fa-brands {
+        color: rgb(190, 188, 188);
+    }
+}
+
+
+
  
