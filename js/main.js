@@ -25,7 +25,7 @@ select.addEventListener('click', () => {
 
 
 
-
+/*
 
 const menuItems = document.querySelectorAll('.menu li.dropdown');
 menuItems.forEach(item => {
@@ -51,3 +51,4 @@ function closeSubmenus() {
     submenu.style.maxHeight = null;
   });
 }
+*/

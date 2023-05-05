@@ -77,7 +77,7 @@ main {
 .contenedor {
 	width: 8%;
 	position: absolute;
-  right: 0;
+    right: 2%;
 	margin: auto;
 	padding: 1px 0;
   
@@ -136,7 +136,7 @@ main {
 	
 	overflow: auto;
 	z-index: 100;
-	width: 70%;
+	width: 85%;
 	display: none;
   overflow-x: hidden;
 }
@@ -215,7 +215,7 @@ header.abajo {
     background-color: #fff;
     box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
     transition: 0.8s;
-    padding: 20px 0.1% 20px 0.1%;
+    padding: 20px 0.1% ;
 }
 /* SECTION LOGO*/
 .header-logo {
@@ -254,8 +254,9 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    padding: 25px 0 0 0;
-    margin: 0 ;
+    padding: 0;
+    margin: auto ;
+    padding-top: 2%;
     overflow: hidden;      
 }
 
@@ -760,7 +761,7 @@ footer {
     .mostrar-menu {
         position:absolute;
         right: 5%;
-        color: rgb(190, 188, 188);
+        color: #3D3E3B;
     }
     
     .menu{
@@ -780,7 +781,8 @@ footer {
         display: block;
         text-align: left;
         margin-left: 5%;
-        
+        padding: 25px 25px;
+        margin: 0 ;
         
     }
     .menu a{

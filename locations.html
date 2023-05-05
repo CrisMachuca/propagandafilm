@@ -14,48 +14,54 @@
 </head>
 <body>
   <main>
-  <div class="top">
-    <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details" ><i class="fa-brands fa-instagram"></i></a>
-    <div class="contenedor">
-      <form action="">
-        <div class="selectbox">
-          <div class="select" id="select">
-            <div class="contenido-select">
-              <img src="imagenes/gb.png" alt="">
-              <h1 class="titulol">EN </h1>
-              <i class="fas fa-angle-down"></i>
-            </div>
-            
-          </div>
-    
-          <div class="opciones" id="opciones">
-            <a href="index.html" target="_blank" class="opcion">
-              
-              <div class="contenido-opcion">
-                <img src="imagenes/gb.png" alt="">
-                <div class="textos">
-                  <h1 class="titulol">EN</h1>
-                  
-                </div>
-              </div>
-            </a>
-            <a href="fr/home.html" class="opcion">
-              <div class="contenido-opcion">
-                <img src="imagenes/fr.svg" alt="">
-                <div class="textos">
-                  <h1 class="titulol">FR</h1>
-                 
-                </div>
-              </div>
-            </a>
-            
-          </div>
+    <div class="top">
+      <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details" ><i class="fa-brands fa-instagram"></i></a>
+
+
+<div class="contenedor">
+  <form action="">
+    <div class="selectbox">
+      <div class="select" id="select">
+        <div class="contenido-select">
+          <img src="imagenes/gb.png" alt="">
+          <h1 class="titulol">EN </h1>
+          <i class="fas fa-angle-down"></i>
         </div>
-    
-        <input type="hidden" name="pais" id="inputSelect" value="">
-      </form>
-    
+        
+      </div>
+
+      <div class="opciones" id="opciones">
+        <a href="index.html" target="_blank" class="opcion">
+          
+          <div class="contenido-opcion">
+            <img src="imagenes/gb.png" alt="">
+            <div class="textos">
+              <h1 class="titulol">EN</h1>
+              
+            </div>
+          </div>
+        </a>
+        <a href="fr/home.html" class="opcion">
+          <div class="contenido-opcion">
+            <img src="imagenes/fr.svg" alt="">
+            <div class="textos">
+              <h1 class="titulol">FR</h1>
+             
+            </div>
+          </div>
+        </a>
+        
+      </div>
     </div>
+
+    <input type="hidden" name="pais" id="inputSelect" value="">
+  </form>
+
+</div>
+
+
+
+
   </div>
 <header>
   
@@ -76,33 +82,49 @@
       &#215
     </label>
     <ul>
-      <li><a class="nav-link" href="index.html">HOME</a></li>
-      <li><a class="nav-link" href="about.html">ABOUT</a></li>
-      <li><a class="nav-link" href="services.html">SERVICES</a></li>
-      <li class="dropdown"><a class="dropbtn" href="locations.html"><b>LOCATIONS</b> <i class="fas fa-angle-down"></i></a>
-    <div class="dropdown-content">
-      <a class="desplegable" href="land.html">Land</a>
-      <a class="desplegable" href="sea.htm">Sea</a>
-      <a class="desplegable" href="sky.html">Sky</a>
-    </div>
+      <li><a class="link" href="index.html">HOME</a></li>
+      <li><a class="link" href="about.html">ABOUT</a></li>
+      <li><a class="link" href="services.html">SERVICES</a></li>
+      <li class="dropdown">
+        <a class="dropbtn" href="locations.html"><b>LOCATIONS</b> </a>
+        <ul class="dropdown-content">
+      <li><a class="desplegable" href="land.html">Land</a></li>
+      <li><a class="desplegable" href="sea.html">Sea</a></li>
+      <li><a class="desplegable" href="sky.html">Sky</a></li>
+    </ul>
+    <a class="arrow" href="#"><i class="fas fa-angle-down"></i></a>
   </li>
-      <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+      <li><a class="link" href="contact.html">CONTACT</a></li>
+      <li class="language-menu-hamburguesa">
+        <div class="langboxes">
+          <a href="index.html"><div class="langbox1">
+          <img src="imagenes/gb.png" alt="">
+          <h1 class="titulol">EN </h1>
+        </div></a>
+        <a href="fr/home.html">
+        <div class="langbox2">
+          <img src="imagenes/fr.svg" alt="">
+          <h1 class="titulol">FR </h1>
+        </div></a> 
+      </div>     
+      </li>
+      <li>
+        <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details instamenu" ><i class="fa-brands fa-instagram"></i></a>
+      </li>
   </ul>
   
   </nav>
   
 </div>
-<div class="header-esconder-menu">
-  
-    
-  </div>
+
 </header>
 
 <script type="text/javascript">
   window.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     header.classList.toggle("abajo",window.scrollY>0);
-  })
+  });
+  
 </script>
 
 
@@ -165,7 +187,7 @@
       <div class="footer-right">
         <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="instalink"><p>@propagandafilm.tv</p></a><br>
     
-        <p><b>Languages: </b> <a href="index.html"> English</a> / <a href="fr/home.html">Fraçais</a></p><br>
+        <p class="footer-text"><b>Languages: </b> <a href="index.html"> English</a> / <a href="fr/home.html">Fraçais</a></p><br>
       </div>
    </footer>
 </main>
