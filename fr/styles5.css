@@ -135,7 +135,7 @@
 	
 	overflow: auto;
 	z-index: 100;
-	width: 85%;
+	width: 80px;
 	display: none;
   overflow-x: hidden;
 }

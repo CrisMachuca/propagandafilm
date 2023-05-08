@@ -90,14 +90,13 @@ main {
     z-index: 20;
 }
 .contenido-select {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .select {
-  
-	width: 80%;
+    width: 80%;
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
 	border-radius: 5px;
 	cursor: pointer;
@@ -119,9 +118,8 @@ main {
 
 .titulol {
 	margin-left: 10px;
-  color: white;
-  
-	font-weight: 600;
+    color: white;
+    font-weight: 600;
 	font-size: 0.8em;
 }
 
@@ -129,18 +127,17 @@ main {
 	background: #222222;
 	border-radius: 5px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,.16);
-	
 	overflow: auto;
 	z-index: 100;
-	width: 85%;
+	width: 80px;
 	display: none;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .opciones.active {
 	display: block;
 	animation: fadeIn .3s forwards;
-  background-color: #585757;
+    background-color: #585757;
 }
 
 @keyframes fadeIn {

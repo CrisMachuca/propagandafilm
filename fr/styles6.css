@@ -82,7 +82,7 @@
 .contenedor {
 	width: 8%;
 	position: absolute;
-  right: 0;
+  right: 2%;
 	margin: auto;
 	padding: 1px 0;
   
@@ -141,7 +141,7 @@
 	
 	overflow: auto;
 	z-index: 100;
-	width: 70%;
+	width: 80px;
 	display: none;
   overflow-x: hidden;
 }

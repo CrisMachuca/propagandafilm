@@ -52,7 +52,7 @@
 .contenedor {
    width: 8%;
    position: absolute;
- right: 0;
+ right: 2%;
    margin: auto;
    padding: 1px 0;
  
@@ -110,8 +110,8 @@
    box-shadow: 0px 5px 10px rgba(0,0,0,.16);
    
    overflow: auto;
-   z-index: 100;
-   width: 70%;
+   z-index: 90px;
+   width: 80px;
    display: none;
  overflow-x: hidden;
 }
@@ -213,9 +213,7 @@
  }
  
  /*menu*/
- .header-menu {
-     
- }
+
  nav {
      
      position: absolute;
@@ -449,7 +447,7 @@
          right: 0%;
      }
      .top {
-         background-color: blue;
+         display: none;
      }
  }
  

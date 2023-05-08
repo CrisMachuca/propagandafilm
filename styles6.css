@@ -92,23 +92,22 @@
 	width: 100%;
 	margin: auto;
 	position: relative;
-  background-color: transparent;
-  z-index: 20;
+    background-color: transparent;
+    z-index: 20;
 }
 .contenido-select {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 	align-items: center;
 }
 
 .select {
-  
-	width: 80%;
+    width: 80%;
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
 	border-radius: 5px;
 	cursor: pointer;
 	display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
 	align-items: center;
 	transition: .1s ease all;
 	margin-bottom: 1px;
@@ -116,9 +115,6 @@
 	position: relative;
 	z-index: 200;
 }
-
-
-
 
 .select i {
 	font-size: 0.7em;
@@ -128,9 +124,8 @@
 
 .titulol {
 	margin-left: 10px;
-  color: white;
-  
-	font-weight: 600;
+    color: white;
+    font-weight: 600;
 	font-size: 0.8em;
 }
 
@@ -138,18 +133,17 @@
 	background: #222222;
 	border-radius: 5px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,.16);
-	
 	overflow: auto;
 	z-index: 100;
-	width: 85%;
+	width: 80px;
 	display: none;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .opciones.active {
 	display: block;
 	animation: fadeIn .3s forwards;
-  background-color: #585757;
+    background-color: #585757;
 }
 
 @keyframes fadeIn {
