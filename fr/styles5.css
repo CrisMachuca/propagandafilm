@@ -122,9 +122,8 @@
 
 .titulol {
 	margin-left: 10px;
-  color: white;
-  
-	font-weight: 600;
+    color: white;
+    font-weight: 600;
 	font-size: 0.8em;
 }
 
@@ -132,18 +131,17 @@
 	background: #222222;
 	border-radius: 5px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,.16);
-	
 	overflow: auto;
 	z-index: 100;
 	width: 80px;
 	display: none;
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .opciones.active {
 	display: block;
 	animation: fadeIn .3s forwards;
-  background-color: #585757;
+    background-color: #585757;
 }
 
 @keyframes fadeIn {

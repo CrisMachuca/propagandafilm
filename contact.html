@@ -17,7 +17,7 @@
   <div class="top">
     <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details" ><i class="fa-brands fa-instagram"></i></a>
     <div class="contenedor">
-      <form action="">
+      <form class="formulario" action="">
         <div class="selectbox">
           <div class="select" id="select">
             <div class="contenido-select">
@@ -76,35 +76,17 @@
       &#215
     </label>
     <ul>
-      <li><a class="link" href="index.html">HOME</a></li>
-      <li><a class="link" href="about.html">ABOUT</a></li>
-      <li><a class="link" href="services.html">SERVICES</a></li>
-      <li class="dropdown">
-        <a class="dropbtn" href="locations.html">LOCATIONS </a>
-        <ul class="dropdown-content">
-      <li><a class="desplegable" href="land.html">Land</a></li>
-      <li><a class="desplegable" href="sea.html">Sea</a></li>
-      <li><a class="desplegable" href="sky.html">Sky</a></li>
-    </ul>
-    <a class="arrow" href="#"><i class="fas fa-angle-down"></i></a>
+      <li><a class="link1" href="index.html">HOME</a></li>
+      <li><a class="link2" href="ABOUT.html">ABOUT</a></li>
+      <li><a class="link3" href="services.html">SERVICES</a></li>
+      <li class="dropdown"><a class="dropbtn" href="locations.html">LOCATIONS <i class="fas fa-angle-down"></i></a>
+    <div class="dropdown-content">
+      <a class="desplegable1" href="terre.html">Land</a>
+      <a class="desplegable2" href="mer.html">Sear</a>
+      <a class="desplegable3" href="air.html">Sky</a>
+    </div>
   </li>
-      <li><a class="link" href="contact.html"><b>CONTACT</b></a></li>
-      <li class="language-menu-hamburguesa">
-        <div class="langboxes">
-          <a href="index.html"><div class="langbox1">
-          <img src="imagenes/gb.png" alt="">
-          <h1 class="titulol">EN </h1>
-        </div></a>
-        <a href="fr/home.html">
-        <div class="langbox2">
-          <img src="imagenes/fr.svg" alt="">
-          <h1 class="titulol">FR </h1>
-        </div></a> 
-      </div>     
-      </li>
-      <li>
-        <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details instamenu" ><i class="fa-brands fa-instagram"></i></a>
-      </li>
+      <li><a class="link4" href="contact.html"><b>CONTACT</b></a></li>
   </ul>
   
   </nav>
@@ -123,11 +105,12 @@
   })
 </script>
 
-
+<section class="empty"></section>
 <section id="contacto">
     <h1 class="contact-title">CONTACT</h1>
-    <span class="text1">Please fill the form below and we'll contact you right away</span>
-    <form action="#" target="" method="get" name="formDatosPersonales">
+    <span class="text1">Please fill the form below and we´ll contact you right away</span>
+    
+    <form class="formulario-contacto" action="#" target="" method="get" name="formDatosPersonales">
         
         <ul style="list-style: none;">
           <li>
@@ -152,22 +135,16 @@
       </li>
       <li>
         <textarea name="mensaje" for="mensaje" maxlength="300" required></textarea>
-        <label class="campo5" for="mensaje">Message*</label>
+        <label class="campo5" for="mensaje">Message</label>
         
       </li>
       </ul>
         <input type="submit" name="enviar" value="Submit"/>
     </form>
+
+  
 </section>
 
-
-    
-    
-
-  <!--ATAJO PARA HACER UNA GALERIA, todo esto que aparece abajo de este comentario desde el h1 hasta que se cierre
-  el DIV se puede hacer con este atajo:
-  .gallery-container>.gallery__item*8>img.gallery__img[src="imagenes/Locations/Land/Architecture/imagen$.jpg"] y justo después pulsar la tecla TAB
--->
 
 <footer>
   <div class="footer-left">
@@ -175,19 +152,19 @@
     <p>Sitemap:</p>
     <section class="sitemap">
       <ul>
-        <li><a class="linka1" href="index.html"><b>Home</b></a></li>
-        <li><a class="linka2" href="about.html">About</a></li>
-        <li><a class="linka3" href="services.html">Services</a></li>
-        <li><a class="linka4" href="locations.html">Locations</a></li>
-        <li><a class="linka5" href="contact.html">Contact</a></li>
+        <li><a class="sitemap-link" href="index.html">home</a></li>
+          <li><a class="sitemap-link" href="about.html">About</a></li>
+          <li><a class="sitemap-link" href="services.html">Services</a></li>
+          <li><a class="sitemap-link" href="locations.html">Locations</a></li>
+          <li><a class="sitemap-link" href="contact.html">Contact</a></li>
         </ul>
         <br>
     </section>
   </div>
     <div class="footer-right">
-      <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="instalink"><p>@propagandafilm.tv</p></a><br>
-  
-      <p><b>Languages: </b> <a href="index.html"> English</a> / <a href="fr/home.html">Fraçais</a></p><br>
+      @<a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="instalink"><p>propagandafilm.tv </p></a> &#8226
+      <a href="#" target="_blank" class="instalink"><p class="cookies">  Cookies</p></a><br>
+      <p class="footer-text"><b>Languages: </b> <a href="index.html"> <u>English</u></a> / <a href="fr/home.html">Français</a></p><br>
     </div>
  </footer>
 

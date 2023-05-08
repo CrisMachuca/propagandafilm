@@ -380,25 +380,12 @@
 form {
     
     width: 70%;
-    height: auto;
+    min-height: 55vh;
     padding: 2em;
     margin: 0 auto;
     
 }
 
-
-/*
-form{
-	padding-top: 5%;
-    padding-bottom: 10%;
-	width: 90%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin-bottom: 40%;
-    height: 700vh;
-}
-*/
 form label{
 	width:100%;
 	color: #9c9c9c; 
@@ -492,12 +479,10 @@ textarea:focus {
     justify-content: space-between;
     align-items: center;
     background-color: #222222;
-    height: 15vh;
-    
-    color: #FFFFFFB3;
-    position: relative;
+    min-height: 15vh;
+    max-height: 25vh;
     width: 100%;
-    margin: 0 auto;
+    color: #FFFFFFB3;
 }
 .footer-left {
     margin-left: 2%;
@@ -520,9 +505,16 @@ textarea:focus {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
-.instalink {
+
+.instalink , .instalink:visited {
     text-decoration: underline;
     color: #FFFFFFB3;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.footer-text a, .footer-text a:visited {
+    color: #FFFFFFB3;;
 }
  
  /* RESPONSIVE */

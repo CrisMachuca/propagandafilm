@@ -4,11 +4,34 @@
     padding: 0;
     font-family: "Open Sans", sans-serif;
  }
- /*
  @font-face {
-     font-family: 'Proxima Nova Font';
-     src: url('../fonts/Proxima-Nova-Font/Proxima Nova Font.otf');
- }*/
+    font-family: 'metropolis';
+    font-style: regular;
+    font-weight: 200;
+    src: url('fuentes/metropolis/Metropolis-Regular.otf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'metropolis';
+    font-style: italic;
+    font-weight: 200;
+    src: url('fuentes/metropolis/Metropolis-RegularItalic.otf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'josefine';
+    font-style: regular;
+    font-weight: 100;
+    src: url('fuentes/josefine/JosefinSans-Regular.ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'Opensans';
+    font-style: regular;
+    font-weight: 100;
+    src: url('fuentes/OpenSans/OpenSans-Regular.ttf');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
  
  main {
      
@@ -353,18 +376,18 @@
      justify-content: center;
      text-align: center;
      gap: 10px;
-     background-color: #C3C3C3;
+     background-color: #fff;
      
  }
  .titulo {
      color: black;
-     font-family: Arial, Helvetica, sans-serif;
+     font-family: 'josefine';
      font-size: 25px;
      padding-bottom: 20px;
      
  }
  .parrafo {
-     font-family: Arial, Helvetica, sans-serif;
+    font-family: 'metropolis';
      font-size: 18px;
      font-weight: lighter;
      line-height : 30px;
