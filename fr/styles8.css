@@ -189,33 +189,36 @@
  
  /*HEADER - barra blanca*/
  header {
-     display: flex;
-     flex-direction: row;
-     flex-wrap: nowrap;
-     justify-content: space-between;
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 5vh;
-     z-index: 3;
-     background-color: transparent;
-     padding: 3% 0.1% 3% 0.1%;
-     transition: 0.2s;
- }
- /*Cuando haces scroll el fondo del header cambia de color:*/
- 
- header.abajo {
-     background-color: #fff;
-     box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
-     transition: 0.2s;
-     padding: 20px 0.1% 20px 0.1%;
- }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 50px;
+    padding-bottom: 0;
+    /*padding: 3% 0.1% 3% 0.1%;*/
+    transition: 0.2s;
+}
+/*Cuando haces scroll el fondo del header cambia de color:*/
+
+header.abajo {
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
+    transition: 0.2s;
+    padding: 10px 0.1% 20px 0.1%;
+    height: 50px;
+}
  /* SECTION LOGO*/
  .header-logo {
      display: flex;
      flex-direction: row;
-     position: absolute;
+     margin: auto;
      padding-top: 0;
      margin-left: 2.7%;
  }
@@ -384,28 +387,20 @@ a, a:visited {
  }
  
  .contenido-banner {
-     
-     position: absolute;
-     right: 10%;
-     bottom: -30%;
-     line-height: 2vh;
-     color: #fff;
-     font-family: 'OpenSans';
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     
- }
- .texto-encima-banner {
-     font-size: 1.8em;
-     font-weight: 400;
-     padding-bottom: 20px;
-     padding-top: 20px;
-     border-bottom: 2px solid white;
-     border-top: 2px solid white;
-     width: fit-content; /* para ajustar las lineas al tamaño del texto */
- }
+    color: #fff;
+    font-family: 'OpenSans';
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.texto-encima-banner {
+    font-size: 4em;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
  .texto-encima-banner2 {
     font-size: 1.8em;
     font-weight: 400;
@@ -543,13 +538,18 @@ a, a:visited {
    
    @media(max-width: 899px){ /*la web original es de hasta 899px*/
     /*HEADER*/
+    header {
+        background-color: transparent;
+        padding-top: 10px;
+        height: 20px;
+     }
     .mostrar-menu, .esconder-menu{
         display: block;
     }
     .mostrar-menu {
         position:absolute;
         right: 5%;
-        color: #3D3E3B;
+        
     }
     
     .menu{
@@ -580,9 +580,7 @@ a, a:visited {
     }
     nav ul li{
         border-bottom: 1px solid rgb(190, 188, 188);
-        width: 70vw;
-       
-        
+        width: 70vw;  
     }
     .dropdown {
         position: relative;
