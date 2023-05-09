@@ -39,21 +39,14 @@
      max-width: 100%;
      display: block;
   }
-  body {
-    background-color: cornflowerblue;
-    
-  }
+
   main {
       
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
      align-items: center;
-     align-content: stretch;
-     background-color: chartreuse;
-     
-     
-      
+     align-content: stretch;  
   }
   
   /*  TOP */
@@ -89,7 +82,7 @@
   .formulario {
      width: 100%;
      position: absolute;
-   right: 0;
+     right: 0;
      margin: auto;
      padding: 0;
   }
@@ -117,7 +110,6 @@
  }
  
  .select {
-   
      width: 80%;
      box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
      border-radius: 5px;
@@ -131,7 +123,6 @@
      position: relative;
      z-index: 200;
  }
- 
  
  .select i {
      font-size: 0.7em;
@@ -160,7 +151,7 @@
  .opciones.active {
      display: block;
      animation: fadeIn .3s forwards;
-   background-color: #585757;
+     background-color: #585757;
  }
  
  @keyframes fadeIn {
@@ -185,9 +176,8 @@
  
  .contenido-opcion img {
      width: 30px;
-     
- 
  }
+
  .contenido-select img {
    width: 30px;
  }
@@ -241,11 +231,9 @@
   }
   
   #logo-img {
-      
       height: 6vh;
   }
   .logo-text {
-      
       font-weight: 200;
       color: #3D3E3B;
       position: relative;
@@ -341,6 +329,46 @@
   #check {
       display: none;
   }
+  .language-menu-hamburguesa {
+    display: none;  
+  }
+  .langboxes {
+    display: flex;
+  }
+  .langbox1, .langbox2 {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    padding: 10% 15%;
+    border-radius: 5px;
+  }
+  .langbox1 {
+    background-color: rgb(238, 238, 238);
+    
+    
+  }
+  .langbox1 img, .langbox2 img {
+    width: 30px;
+  }
+  .langbox1 h1, .langbox2 h1 {
+    color:#555555;
+    font-weight: bold;
+    align-self: center;
+  }
+  .instamenu {
+    display: none;
+    font-size: 1.1rem;
+    text-shadow: none;
+    transition: transform 0.3s ease-out;
+    margin-left: 1px;
+    color: rgb(190, 188, 188);
+  }
+  .arrow {
+    position: relative;
+    left: -10px;
+    margin: 0;
+    padding: 0;  
+  }
   
   /* FIN DE MENU*/
   .empty {
@@ -353,17 +381,6 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     background-color: blueviolet;
-     
-     /*
-     width: 90%;
-     margin: 0 auto;
-     padding-top: 15vh;
-    
-     /*margin: auto;
-     margin-top: 15vh;
-     margin-bottom: 10vh;*/
-     
   }
   .contact-title {
      text-align: center;
@@ -380,29 +397,15 @@
      
  }
  
- 
+
  form {
      
      width: 70%;
      min-height: 55vh;
      padding: 2em;
      margin: 0 auto;
-     
  }
  
- 
- /*
- form{
-     padding-top: 5%;
-     padding-bottom: 10%;
-     width: 90%;
-     height: auto;
-     display: block;
-     margin: auto;
-     margin-bottom: 40%;
-     height: 700vh;
- }
- */
  form label{
      width:100%;
      color: #9c9c9c; 
@@ -508,7 +511,8 @@
  }
  .sitemap ul {
      display: flex;
-     list-style-type: none;  
+     list-style-type: none; 
+     line-height: 2%; 
  }
  
  .sitemap ul a, .sitemap ul a:visited {
@@ -666,8 +670,7 @@
    .dropbtn {
        margin: auto;
        padding: 0;
-       
-       
+          
    }
    .fa-brands {
        color: rgb(190, 188, 188);

@@ -731,7 +731,7 @@ footer {
   @media only screen and (max-width: 769px){
      
     
-    .container .galeria{
+  .container .galeria{
      flex-direction: column;
     }
   
