@@ -467,7 +467,7 @@ a, a:visited {
 
 /* TEXTO SECCIONES */
 
-.texto-secciones {
+a .texto-secciones {
     position: relative;
     text-align: center;
     font-family: "Open Sans", sans-serif;
