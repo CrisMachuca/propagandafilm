@@ -472,22 +472,22 @@ a, a:visited {
  /* FOOTER */
  
  footer {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     background-color: #222222;
-     height: 15vh;
-     width: 100%;
-     color: #FFFFFFB3;
-     padding-top: 2%;
-     padding-bottom: 2%;
- }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    min-height: 100%;
+    width: 100%;
+    color: #FFFFFFB3;
+    padding: 1%;
+    font-size: 0.9em;
+}
  .footer-left {
-     margin-left: 2%;
+     margin-left: 1%;
      
  }
  .footer-right {
-     margin-right: 2%;
+     margin-right: 1%;
      
  }
  .sitemap ul {

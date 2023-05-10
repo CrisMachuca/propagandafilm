@@ -464,18 +464,19 @@ a, a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #222222;
-    min-height: 15vh;
-    max-height: 25vh;
+    background-color: #000;
+    min-height: 100%;
     width: 100%;
     color: #FFFFFFB3;
+    padding: 1%;
+    font-size: 0.9em;
 }
 .footer-left {
-    margin-left: 2%;
+    margin-left: 1%;
     
 }
 .footer-right {
-    margin-right: 2%;
+    margin-right: 1%;
     
 }
 .sitemap ul {
