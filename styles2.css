@@ -43,13 +43,10 @@ main {
     z-index: 4;
 }
 .top a {
-    color: white;
-       
+    color: white;     
 }
 .contact-details {
     font-size: 1.1rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
-    transition: transform 0.3s ease-out;
     padding: auto;
     margin: auto;
     margin-left: 40px; 
@@ -59,13 +56,14 @@ main {
 }
 .fa-brands:hover {
     color: rgba(249, 247, 247, 0.935);
+    transition: 0.5s;
 }
 /* LANGUAGES */
 
 .contenedor {
 	width: 8%;
 	position: absolute;
-    right: 2%;
+    right: 1%;
 	margin: auto;
 	padding: 1px 0;  
 }
@@ -422,7 +420,6 @@ a .texto-secciones {
     justify-content: center;
   }
   .heading-services{
-    
     width: auto;
     padding-bottom: 3%;
     text-align: center;
@@ -602,27 +599,14 @@ footer {
 /* RESPONSIVE */
 
 @media only screen and (max-width: 643px){
-    .container .heading{
-      
-    }
-    .container .heading h3{
-      font-size: 1em;
-    
-    }
-    .container-services .heading-services{
-      
-    }
-    .container-services .heading-services h3{
-      font-size: 1em;
-    
-    }
+    a .texto-secciones {
+        font-size: 1.2em;
+        margin-bottom: 20%; 
+     } 
     .dream-text {
-    
         bottom: 2%;
-    
     }
 }
-  
   @media only screen and (max-width: 769px){ 
   .container .galeria{
      flex-direction: column;
@@ -642,7 +626,6 @@ footer {
   .dream-text {
     bottom: 2%;
 }
-  
   }
   
 @media(max-width: 899px){ /*la web original es de hasta 899px*/

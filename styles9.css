@@ -55,17 +55,13 @@
       background-color: #222222;
       height: 40px;
       width: 100%;
-      color: red;
       z-index: 4;
   }
   .top a {
       color: white;
-      z-index: 4;
   }
   .contact-details {
       font-size: 1.1rem;
-      text-shadow: 2px 2px 1px #1f1f1f;
-      transition: transform 0.3s ease-out;
       padding: auto;
       margin: auto;
       margin-left: 40px; 
@@ -75,6 +71,7 @@
   }
   .fa-brands:hover {
       color: rgba(249, 247, 247, 0.935);
+      transition: 0.5s;
   }
   
   /* LANGUAGES */
@@ -90,12 +87,10 @@
  .contenedor {
      width: 8%;
      position: absolute;
-     right: 2%;
+     right: 1%;
      margin: auto;
-     padding: 1px 0;
-   
+     padding: 1px 0; 
  }
- 
  .selectbox {
      width: 100%;
      margin: auto;
@@ -108,7 +103,6 @@
      justify-content: space-between;
      align-items: center;
  }
- 
  .select {
      width: 80%;
      box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
@@ -256,7 +250,6 @@ header.abajo {
       padding-right: 0;
       color: #3D3E3B;   
   }
-  
   nav ul {
       display: flex;
       list-style-type: none;
