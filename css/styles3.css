@@ -1,0 +1,108 @@
+
+ /*HEADER - barra blanca*/
+ header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 50px;
+    padding-bottom: 0;
+    /*padding: 3% 0.1% 3% 0.1%;*/
+    transition: 0.2s;
+}
+/*Cuando haces scroll el fondo del header cambia de color:*/
+
+header.abajo {
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
+    transition: 0.2s;
+    padding: 10px 0.1% 20px 0.1%;
+    height: 50px;
+}
+ 
+ /* BANNER */
+ #banner {
+     width: 100%;
+     padding: 0 50px;
+     background-image: url(../imagenes/About/Untitled-1-1.jpg);
+     height: 72vh;
+     background-size: cover; /*Para que la imagen rellene todo el espacio y se vea completa*/
+     background-position: center;
+ }
+ .contenido-banner {
+     text-align: right;
+     position: relative;
+     bottom: -36%;
+     line-height: 2vh;
+     color: #fff;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ .contenido-banner h3 {
+     font-size: 1.4em;
+     font-weight: 400;
+     
+ }
+ .contenido-banner h3 span {
+     font-weight: 600;
+ 
+ }
+ 
+ 
+ /*   TEXTO PRINCIPAL  */
+ #texto-principal {
+     padding: 5% 17%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     gap: 10px;
+     background-color: #fff;
+     
+ }
+ .titulo {
+     color: black;
+     font-family: 'josefine';
+     font-size: 25px;
+     padding-bottom: 20px;
+     
+ }
+ .parrafo {
+    font-family: 'metropolis';
+     font-size: 18px;
+     font-weight: lighter;
+     line-height : 30px;
+     color: black;
+     
+ }
+ 
+ #img-clients {
+    width: 90%;
+    height: auto;
+    align-self: center;
+    border-radius: 10px;
+ }
+ 
+ 
+ /*RESPONSIVE*/
+ @media(max-width: 899px){ /*la web original es de hasta 899px*/
+    /*HEADER*/
+    header {
+        background-color: transparent;
+        padding-top: 10px;
+        height: 20px;
+     }
+    
+}
+
+ 
+ 

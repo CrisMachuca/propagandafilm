@@ -1,0 +1,272 @@
+
+ /*HEADER - barra blanca*/
+ header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 50px;
+    padding-bottom: 0;
+    /*padding: 3% 0.1% 3% 0.1%;*/
+    transition: 0.2s;
+}
+/*Cuando haces scroll el fondo del header cambia de color:*/
+
+header.abajo {
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
+    transition: 0.2s;
+    padding: 10px 0.1% 20px 0.1%;
+    height: 50px;
+}
+ /* BANNER */
+ #banner {
+     width: 100%;
+     height: 61vh;
+     padding: 0 50px;
+     background-image: url(../imagenes/Locations/Sky.jpg);
+     
+     background-size: cover;
+      /*Para que la imagen rellene todo el espacio y se vea completa*/
+     
+     background-position: center;
+     
+     
+ }
+ 
+ .contenido-banner {
+     color: #fff;
+     font-family: 'OpenSans';
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+ }
+ .texto-encima-banner {
+     font-size: 4em;
+     font-weight: 400;
+     padding-bottom: 20px;
+     padding-top: 20px;
+ }
+ .texto-encima-banner2 {
+    font-size: 1.8em;
+    font-weight: 400;
+}
+ 
+ /*  GALERIA*/
+
+
+ h2 {
+    padding-top: 2%;
+    padding-left: 10%;
+    font-weight: 200;
+    padding-bottom: 2%;
+ }
+ .galerias {
+    margin: 4% 17%;
+   
+ }
+ 
+  
+.gallery-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2%;
+}
+.gallery-img {
+    height: 20vh;
+    flex-grow: 1;
+    margin: 0 0 2% 2%;
+}
+.gallery-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.gallery-img:nth-child(4n+1) {
+    flex-basis: 20vw;
+    
+}
+.gallery-img:nth-child(4n+2) {
+    flex-basis: 325px;
+    
+}
+.gallery-img:nth-child(4n+3) {
+    flex-basis: 180px;
+    
+}
+.gallery-img:nth-child(4n+4) {
+    flex-basis: 380px;
+    
+}
+
+  /* FIN DE GALERIA */
+
+ 
+ 
+ 
+ /* RESPONSIVE */
+    @media screen and (max-width: 800px) {
+    
+    .galerias {
+        margin-left: 3%;
+        margin-right: 3%;
+        
+     }
+  }
+  
+
+   
+   @media only screen and (max-width: 769px){
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 0;
+        width: 100%;
+        height: auto;
+        color: #FFFFFFB3;
+        position: relative;
+        bottom: 0;
+        left: 0;
+      }
+   
+   }
+   
+   @media(max-width: 899px){ /*la web original es de hasta 899px*/
+    /*HEADER*/
+    header {
+        background-color: transparent;
+        padding-top: 10px;
+        height: 20px;
+     }
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+    .mostrar-menu {
+        position:absolute;
+        right: 5%;
+        
+    }
+    
+    .menu{
+        position: fixed;
+        display:flex;
+        width: 80%;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+        background-color: #fff;
+        text-align: left;
+        padding: 100px 0;
+        z-index: 100;
+        
+    }
+    nav ul {
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        padding: 25px 25px;
+        margin: 0 ;
+        
+    }
+    .menu a{
+        display:flex;
+        padding: 20px 20px 20px 0;
+        color: rgb(190, 188, 188);
+    }
+    nav ul li{
+        border-bottom: 1px solid rgb(190, 188, 188);
+        width: 70vw;  
+    }
+    .dropdown {
+        position: relative;
+        height: 6vh;
+        
+    }
+    .dropdown a i {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 15px;
+        right: 10px;   
+	    font-size: 18px;
+    }
+    
+    .dropdown a i:active {
+        transform: rotate(0deg);
+    }
+   
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        top: 5px;
+        width: 100%;
+        box-shadow: none;
+        margin-left: 5px;
+        transition: 0.8s;
+        padding-top: 2px;
+        
+    }
+    .dropdown-content a {
+        font-size: 14px;
+        font-family: 'josefine';
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .dropdown-content::before {
+        display: none;
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .submenu-open {
+        max-height: 1000px;
+      }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 10%;
+        color: rgb(190, 188, 188);
+        font-size: 2em;
+    }
+    #check:checked ~ .menu{
+        right: 0%;
+    }
+    .top {
+        display: none;
+    }
+    .language-menu-hamburguesa {
+        display: block;
+    }
+    .dropbtn {
+        margin: auto;
+        padding: 0;
+        
+        
+    }
+    .fa-brands {
+        color: rgb(190, 188, 188);
+    }
+}
+ 

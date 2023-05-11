@@ -1,0 +1,434 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'metropolis';
+ }
+ @font-face {
+     font-family: 'metropolis';
+     font-style: regular;
+     font-weight: 200;
+     src: url('fuentes/metropolis/Metropolis-Regular.otf');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+ }
+ @font-face {
+     font-family: 'josefine';
+     font-style: regular;
+     font-weight: 100;
+     src: url('fuentes/josefine/JosefinSans-Regular.ttf');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+ }
+ @font-face {
+     font-family: 'Opensans';
+     font-style: regular;
+     font-weight: 100;
+     src: url('fuentes/OpenSans/OpenSans-Regular.ttf');
+     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+ }
+ main {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+     align-content: stretch;  
+ }
+ 
+ /*  TOP */
+.top {
+    display: flex;
+    background-color: #222222;
+    height: 40px;
+    width: 100%;
+    z-index: 4;
+}
+.top a {
+    color: white; 
+}
+/*HEADER - barra blanca*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 50px;
+    padding-bottom: 0;
+    /*padding: 3% 0.1% 3% 0.1%;*/
+    transition: 0.2s;
+}
+/*Cuando haces scroll el fondo del header cambia de color:*/
+
+header.abajo {
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
+    transition: 0.2s;
+    padding: 10px 0.1% 20px 0.1%;
+    height: 50px;
+}
+
+ /* BANNER */
+ #banner {
+     width: 100%;
+     padding: 0 50px;
+     background-image: url(../imagenes/Locations/Train_siberian.jpg);
+     height: 90vh;
+     background-size: cover; /*Para que la imagen rellene todo el espacio y se vea completa*/
+     background-position: center;
+     position: relative;
+ }
+ .contenido-banner {
+     text-align: right;
+     position: absolute;
+     left: 10%;
+     bottom: -1%;
+     line-height: 2vh;
+     color: #fff;
+     font-family: 'OpenSans';
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left: 10%;
+     padding-right: 10%;
+ }
+ .contenido-banner h3 {
+     font-size: 1.8em;
+     font-weight: 400;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     border-bottom: 2px solid white;
+     border-top: 2px solid white;
+     line-height: 30px;
+ }
+ 
+ 
+ /*   TEXTO PRINCIPAL  */
+ #texto-principal {
+     padding: 5% 3%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     gap: 10px;
+     background-color: #222222;
+     color: #fff;
+ }
+ .titulo {
+     color: #fff;
+     font-family: 'josefine';
+     font-style: bold;
+     font-weight:100;
+     font-size: 30px;
+     width: fit-content;
+     align-self: center;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-top: 2px solid white ;
+     border-bottom: 2px solid white;
+ }
+ .parrafo {
+     font-family: 'metropolis';
+     font-size: 18px;
+     font-weight: lighter;
+     line-height : 30px;
+     color: #fff;
+     
+ }
+ 
+
+ /*  GALERIA*/
+ 
+ .container{
+     display: flex;
+     flex-direction: column;
+     width: 94%;
+     height: auto;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     
+   }
+   .texto-heading {
+    text-align: center;
+    justify-content: center;
+    padding: 3% 14% 3% 14%;
+    font-family: 'metropolis';
+    font-size: 1.2em;
+    font-weight: lighter;
+     line-height : 30px;
+     color: #282828;
+   }
+   .galeria {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     overflow: hidden;
+     gap: 3%;
+   }
+   
+   .container .heading{
+     width: auto;
+     padding-bottom: 10px;
+     
+   }
+  
+    
+   .dream img{
+     height: 78%; /* con esto he conseguido arreglar la tercera imagen!!!!*/
+     width: 100%;
+     border-radius: 5px;
+     margin-bottom: 10px;
+   }
+   .dream a {
+    
+        height: 78%; /* con esto he conseguido arreglar la tercera imagen!!!!*/
+       
+      
+   }
+   
+   .dream-text a {
+     
+    color: #282828;
+    font-size: 1.3em;
+    font-weight: 100;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    position: relative;
+    bottom: 18px;
+    
+    
+  }
+   
+   
+   .dream{
+     display: flex;
+     flex-direction: column; /* con esto he conseguido que las letras se pongan abajo*/
+     justify-content: center;
+     width: 100%;
+     height: auto;
+     position: relative; /*con esto hago que lsletras queden dentro del contenedor*/
+   }
+ 
+   /*HOVER EFFECT FLASHING*/
+   .galeria img:hover{
+     opacity: 1;
+     -webkit-animation: flash 1.5s;
+     animation: flash 1.5s;
+ }
+ @-webkit-keyframes flash {
+     0% {
+         opacity: .4;
+     }
+     100% {
+         opacity: 1;
+     }
+ }
+ @keyframes flash {
+     0% {
+         opacity: .4;
+     }
+     100% {
+         opacity: 1;
+     }
+   }
+ 
+ /* FIN DE GALERIA */
+ 
+ /* LOGO ABAJO */
+
+ .logo-big {
+   
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    
+     
+ }
+ 
+ 
+ 
+ /* RESPONSIVE */
+ 
+ @media only screen and (max-width: 643px){
+     .container .heading{
+       width: 100%;
+     }
+     .container .heading h3{
+       font-size: 1em;
+     
+     }
+     .container-services .heading-services{
+       width: 100%;
+     }
+     .container-services .heading-services h3{
+       font-size: 1em;
+     
+     }
+     
+     }
+   
+   @media only screen and (max-width: 769px){
+      
+     
+     .container .galeria{
+      flex-direction: column;
+     }
+   
+   .container .galeria .dream{
+     width: 100%;
+     flex-direction: column;
+   }
+
+   .dream-text {
+    padding-top: 5%;
+   }
+
+   footer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     padding-top: 3%;
+     padding-bottom: 3%;
+   }
+   
+   }
+   
+   @media(max-width: 899px){ /*la web original es de hasta 899px*/
+    /*HEADER*/
+    header {
+        background-color: transparent;
+        padding-top: 10px;
+        height: 20px;
+     }
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+    .mostrar-menu {
+        position:absolute;
+        right: 5%;
+        color: #3D3E3B;
+    }
+    
+    .menu{
+        position: fixed;
+        display:flex;
+        width: 80%;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+        background-color: #fff;
+        text-align: left;
+        padding: 100px 0;
+        z-index: 100;
+        
+    }
+    nav ul {
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        padding: 25px 25px;
+        margin: 0 ;
+        
+    }
+    .menu a{
+        display:flex;
+        padding: 20px 20px 20px 0;
+        color: rgb(190, 188, 188);
+    }
+    nav ul li{
+        border-bottom: 1px solid rgb(190, 188, 188);
+        width: 70vw;
+       
+        
+    }
+    .dropdown {
+        position: relative;
+        height: 6vh;
+        
+    }
+    .dropdown a i {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 15px;
+        right: 10px;   
+	    font-size: 18px;
+    }
+    
+    .dropdown a i:active {
+        transform: rotate(0deg);
+    }
+   
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        top: 5px;
+        width: 100%;
+        box-shadow: none;
+        margin-left: 5px;
+        transition: 0.8s;
+        padding-top: 2px;
+        
+    }
+    .dropdown-content a {
+        font-size: 14px;
+        font-family: 'josefine';
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .dropdown-content::before {
+        display: none;
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .submenu-open {
+        max-height: 1000px;
+      }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 10%;
+        color: rgb(190, 188, 188);
+        font-size: 2em;
+    }
+    #check:checked ~ .menu{
+        right: 0%;
+    }
+    .top {
+        display: none;
+    }
+    .language-menu-hamburguesa {
+        display: block;
+    }
+    .dropbtn {
+        margin: auto;
+        padding: 0;
+        
+        
+    }
+    .fa-brands {
+        color: rgb(190, 188, 188);
+    }
+}
+
+
+
+ 

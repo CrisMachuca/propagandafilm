@@ -1,0 +1,392 @@
+/*HEADER - barra blanca*/
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.7);
+    padding-top: 50px;
+    padding-bottom: 0;
+    /*padding: 3% 0.1% 3% 0.1%;*/
+    transition: 0.2s;
+}
+/*Cuando haces scroll el fondo del header cambia de color:*/
+
+header.abajo {
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 1px rgba(178, 178, 178, 0.427);
+    transition: 0.2s;
+    padding: 10px 0.1% 20px 0.1%;
+    height: 50px;
+}
+
+
+/* BANNER */
+#banner {
+    width: 100%;
+    padding: 0 50px;
+    background-image: url(../imagenes/Services/Camera-car-crane-with-hot-head-flip.jpg);
+    height: 97vh;
+    background-size: cover; /*Para que la imagen rellene todo el espacio y se vea completa*/
+    background-position: center;
+}
+
+
+/*   TEXTO PRINCIPAL  */
+#texto-principal {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    max-width: 1100px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+    gap: 4%;
+    padding-top: 3%;
+}
+.icono {
+    width: 7%;
+    height: auto;
+    padding-right: 3%;
+}
+
+.elemento {
+    height: auto;
+    width: 48%;
+    padding-top: 2%;
+    
+}
+
+
+.img-texto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.titulo {
+    color: black;
+    font-family: 'josefine';
+    font-style: bold;
+    font-weight:100;
+    font-size: 30px;
+    padding-bottom: 20px;
+    
+}
+.parrafo {
+    font-family: 'metropolis';
+    font-size: 18px;
+    font-weight: lighter;
+    line-height : 30px;
+    color: rgb(87, 87, 87);
+    
+}
+
+/* LOCATIONS IMG */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    width: 70%;
+    max-width: 1100px;
+    position: relative;
+    padding-bottom: 3%;
+    
+    
+}
+.container1 {
+    position: relative;
+    width: 100%;
+    
+}
+.link-container {
+   display: flex;
+   
+   
+}
+.locations-img {
+    border-radius: 10px;
+    width: 100%;
+}
+.location-txt {
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+.locations-img:hover{
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+  }
+
+/* TEXTO SECCIONES */
+
+.texto-secciones {
+    position: relative;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.3px;/*Espacio entre letras*/
+    font-size: 2em;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #222;  
+ } 
+
+/* LOGO ABAJO */
+
+.logo-big {
+    align-self: center;
+    margin-bottom: 5%;
+}
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    min-height: 100%;
+    width: 100%;
+    color: #FFFFFFB3;
+    padding: 1%;
+    font-size: 0.9em;
+}
+.footer-left {
+    margin-left: 1%;
+    
+}
+.footer-right {
+    margin-right: 1%;
+    
+}
+.sitemap ul {
+    display: flex;
+    list-style-type: none;  
+}
+
+.sitemap ul a, .sitemap ul a:visited {
+    display: inline-block;
+    color: #FFFFFFB3;
+    text-align: center;
+    padding-right: 10px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.instalink , .instalink:visited {
+    text-decoration: underline;
+    color: #FFFFFFB3;
+    display: inline-block;
+    line-height: 1.5em;
+}
+
+.footer-text a, .footer-text a:visited {
+    color: #FFFFFFB3;;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 599px){
+    #texto-principal {
+   flex-direction: column;
+   width: 90%;
+    }
+    .elemento {
+        width: 100%;
+    }
+    .container {
+        
+        width: 90%;
+    }
+}
+  
+  @media only screen and (max-width: 769px){
+     
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .container {
+    width: 80%;
+  }
+  #texto-principal {
+    width: 80%;
+  }
+  
+  }
+  
+  @media(max-width: 899px){ /*la web original es de hasta 899px*/
+    /*HEADER*/
+    header {
+        background-color: transparent;
+        padding-top: 10px;
+        height: 20px;
+     }
+    .mostrar-menu, .esconder-menu{
+        display: block;
+    }
+    .mostrar-menu {
+        position:absolute;
+        right: 5%;
+        color: #3D3E3B;
+    }
+    
+    .menu{
+        position: fixed;
+        display:flex;
+        width: 80%;
+        height: 100vh;
+        right: -100%;
+        top: 0;
+        background-color: #fff;
+        opacity: 1;
+        text-align: left;
+        padding: 100px 0;
+        z-index: 100;
+        
+    }
+    nav ul {
+        display: block;
+        text-align: left;
+        margin-left: 5%;
+        padding: 25px 25px;
+        margin: 0;
+        
+    }
+    .menu a{
+        display:flex;
+        padding: 20px 20px 20px 0;
+        color: rgb(190, 188, 188);
+    }
+    nav ul li{
+        border-bottom: 1px solid rgb(190, 188, 188);
+        width: 70vw;
+       
+        
+    }
+    .dropdown {
+        position: relative;
+        height: 6vh;
+        
+    }
+    .dropdown a i {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 15px;
+        right: 10px;   
+	    font-size: 18px;
+    }
+    
+    .dropdown a i:active {
+        transform: rotate(0deg);
+    }
+   
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        top: 5px;
+        width: 100%;
+        box-shadow: none;
+        margin-left: 5px;
+        transition: 0.8s;
+        padding-top: 2px;
+        
+    }
+    .dropdown-content a {
+        font-size: 14px;
+        font-family: 'josefine';
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .dropdown-content::before {
+        display: none;
+    }
+    .arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .submenu-open {
+        max-height: 1000px;
+      }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 10%;
+        color: rgb(190, 188, 188);
+        font-size: 2em;
+    }
+    #check:checked ~ .menu{
+        right: 0%;
+    }
+    .top {
+        display: none;
+    }
+    .language-menu-hamburguesa {
+        display: block;
+    }
+    .dropbtn {
+        margin: auto;
+        padding: 0;
+        
+        
+    }
+    .fa-brands {
+        color: rgb(190, 188, 188);
+    }
+
+    header {
+        
+        top: 0;
+        
+    }
+    .container {
+        width: 90%;
+    }
+    #texto-principal {
+        width: 90%;
+    }
+}
+
+
