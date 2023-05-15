@@ -129,11 +129,11 @@
     <h1 class="contact-title">CONTACT</h1>
     <span class="text1">Please fill the form below and we´ll contact you right away</span>
     
-    <form class="formulario-contacto" action="formulario.php" target="" method="post" name="formDatosPersonales">
+    <form class="formulario-contacto" action="formulario.php" target="" method="get" name="formDatosPersonales">
         
         <ul style="list-style: none;">
           <li>
-            <input type="text" name="name" id="nombre"required/>
+            <input type="text" name="nombre" id="nombre"required/>
             <label class="campo1" for="nombre">Your Name*</label>
         
           </li>
@@ -165,7 +165,7 @@
 </section>
 
 
-<section class="footer">
+<footer>
   <div class="footer-left">
     <p>2000-2023 Propaganda Films</p><br>
     <p>Sitemap:</p><br>
@@ -185,7 +185,7 @@
       <a href="#" target="_blank" class="instalink"><p class="cookies">  Cookies</p></a><br>
       <p class="footer-text"><b>Languages: </b> <a href="index.html"> <u>English</u></a> / <a href="fr/home.html">Français</a></p><br>
     </div>
-  </section>
+ </footer>
 
 </main>
 
