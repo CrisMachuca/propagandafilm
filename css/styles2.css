@@ -1,4 +1,10 @@
-
+@font-face {
+  font-family: 'Opensans';
+  font-style: regular;
+  font-weight: 100;
+  src: url('../fuentes/OpenSans/OpenSans-Regular.ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 /*HEADER - barra blanca*/
 header {
     display: flex;
@@ -275,10 +281,21 @@ a .texto-secciones {
     left: 0;
     width: 100%;
     padding: 1%;
+    padding-top: 14px;
     background-color: #222222;
     text-align: center;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 35px 40px 35px;
+    
+    
+  }
+.banner-text {
+  
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 14px;
+
   }
   
   #button-container {
@@ -286,11 +303,12 @@ a .texto-secciones {
   }
 
   #button-container button {
-    margin-right: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    margin-right: 1em;
+    font-family: 'Opensans';
     color: #222222;
-    font-size: 18px;
-    padding: 14px;
+    font-size: 1em;
+    padding: 10px;
     text-decoration: none;
     border-radius: 5px;
     border: solid #ffffff 2px;
@@ -303,6 +321,7 @@ a .texto-secciones {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition: 0.3s;
   }
+
   .close-btn {
     color: #aaa;
     float: right;
@@ -329,7 +348,9 @@ a .texto-secciones {
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 60%;
+    min-width: 10%;
+    font-size: 1em;
   }
   
   .close {
