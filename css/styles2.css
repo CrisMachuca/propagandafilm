@@ -267,6 +267,140 @@ a .texto-secciones {
     padding-right: 5%;
     padding-bottom: 5%;
  }
+/* COOKIES */
+
+ #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1%;
+    background-color: #222222;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #button-container {
+    margin-top: 10px;
+  }
+
+  #button-container button {
+    margin-right: 30px;
+    font-family: Arial;
+    color: #222222;
+    font-size: 18px;
+    padding: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid #ffffff 2px;
+    background-color: #ffffff;
+  }
+  #button-container > button:hover {
+    background-color: #222222;
+    border: solid #e0e0e0 2px;
+    color: #ffffff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+  }
+  .close-btn {
+    color: #aaa;
+    float: right;
+    padding-right: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+ 
+  #cookie-modal {
+    display: none; /* Modal oculto por defecto */
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-top: 0;
+    padding-left: 20px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 0.5%;
+  }
+  #cookie-modal input[type="radio"] {
+    -webkit-appearance: none; /* Deshabilita la apariencia predeterminada */
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #2c2c2c; /* Borde del botón */
+  width: 20px; /* Ancho del botón */
+  height: 20px; /* Altura del botón */
+  border-radius: 3px; /* Borde redondeado deshabilitado */
+  position: relative;
+  margin-right: 10px;
+  
+}
+
+/* Estilos para los elementos <input> seleccionados en el modal */
+#cookie-modal input[type="radio"]:checked {
+  background-color: #000; /* Color de fondo cuando está seleccionado */
+}
+
+  .parrafo-settings {
+    padding: 20px;
+    width: 80%;
+    line-height: 30px;;
+  }
+  .contenedor-opcion {
+    width: 90%;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+ .descripcion-cookie {
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+ }
+  
+  #save-button {
+    background-color: #000;
+    color: white;
+    height: 3rem;
+    width: 6rem;
+    padding: 0.5rem;
+    margin-bottom: 20px; 
+    border-radius: 5px;
+  }
 
 /* RESPONSIVE */
 

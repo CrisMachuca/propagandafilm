@@ -210,8 +210,41 @@
         <p class="footer-text"><b>Languages: </b> <a href="index.html"> English</a> / <a href="fr/home.html"><u>Français</u></a></p><br>
       </div>
    </footer>
+   <div id="cookie-banner">
+    <span class="close-btn">&times;</span>
+    <p>We use cookies to enable the proper functioning and security of our website, and to offer you the best possible user experience</p>
+    <div id="button-container">
+      <button id="accept-button">Accept All</button>
+      <button id="reject-button">Decline</button>
+      <button id="manage-button">Open advanced settings</button>
+    </div>
+  </div>
+  <div id="cookie-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-button" class="close">&times;</span>
+      <h2>Advanced settings</h2>
+      <p class="parrafo-settings">You can customize your cookie preferences here. Enable or disable the following categories and save your selection.</p>
+      <form>
+        <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="essential"> <b>Essential cookies</b><br>
+        <p class="descripcion-cookie">The essential cookies are essential for the safe and correct operation of our website and the registration process.</p>
+      </div>
+      <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="functional"> <b>Functional cookies</b><br>
+        <p class="descripcion-cookie">Functional cookies remember your preferencies for our website and enable its customization.</p>
+      </div>
+        <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="performance"> <b>Performance cookies</b><br>
+        <p class="descripcion-cookie">Performance cookies monitor the performance of our website.</p>
+      </div>
+      <div class="contenedor-opcion">
+        <input type="radio" name="cookie-option" value="marketing"> <b>Marketing/third part cookies</b><br>
+        <p class="descripcion-cookie">Marketing cookies allow us to measure and analyze the performance of our website.</p>
+      </div>
+      </form>
+      <button id="save-button">Save</button>
+    </div>
+  </div>
 </main>
 <script src="js/main.js"></script>
+
 
 </body>
 </html>
