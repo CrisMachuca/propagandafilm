@@ -142,7 +142,7 @@ header.abajo {
      /*resize: vertical | horizontal | none | both*/
      resize:none;
      display:block;
-     font-size: 1vw;
+     font-size: 1em;
      overflow-y: hidden;
  }
  textarea:focus {
