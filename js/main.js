@@ -173,3 +173,57 @@ const cookieBanner = document.querySelector('#cookie-banner');
 closeBtn.addEventListener('click', function() {
   cookieBanner.style.display = 'none';
 });
+
+// Función para establecer una cookie
+function setCookie(name, value, days) {
+  const expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + days);
+  const cookieValue = encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; path=/';
+  document.cookie = name + '=' + cookieValue;
+}
+
+// Función para establecer una cookie
+function setCookie(name, value, days) {
+  const expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + days);
+  const cookieValue = encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; path=/';
+  document.cookie = name + '=' + cookieValue;
+}
+
+// Función para obtener el valor de una cookie
+function getCookie(name) {
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.startsWith(name + '=')) {
+      return decodeURIComponent(cookie.substring(name.length + 1));
+    }
+  }
+  return null;
+}
+
+// Verificar si las cookies han sido gestionadas
+
+const cookieManaged = getCookie('cookies_managed');
+
+if (cookieManaged === 'true') {
+  cookieBanner.style.display = 'none'; // Ocultar el banner si las cookies ya han sido gestionadas
+} else {
+  // Mostrar el banner de cookies y añadir el evento de cierre al botón de cierre
+  cookieBanner.style.display = 'block';
+
+  const closeBtn = document.querySelector('.close-btn');
+  closeBtn.addEventListener('click', function() {
+    setCookie('cookies_managed', 'true', 365); // Establecer la cookie para indicar que las cookies han sido gestionadas
+    cookieBanner.style.display = 'none';
+
+    // Emitir un evento personalizado para indicar que las cookies han sido gestionadas
+    const cookiesManagedEvent = new Event('cookiesManaged');
+    window.dispatchEvent(cookiesManagedEvent);
+  });
+}
+
+// Escuchar el evento personalizado para cerrar el banner principal de cookies
+window.addEventListener('cookiesManaged', function() {
+  cookieBanner.style.display = 'none';
+});

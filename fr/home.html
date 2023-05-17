@@ -153,7 +153,7 @@
 </div>
 
 <div class="container-services">
-  <div class="heading-services">
+  <div class="heading">
   <a href="services.html"> <h3 class="texto-secciones"><span>S E R V I C E S</span></h3></a>
   </div>
   <div class="container-img">
@@ -211,6 +211,39 @@
         <p class="footer-text"><b>Languages: </b> <a href="../home.html"> <u>English</u></a> / <a href="fr/home.html">Français</a></p><br>
       </div>
    </footer>
+   <div id="cookie-banner">
+    <span class="close-btn">&times;</span>
+    <p>Ce site utilise des cookies pour permettre le bon fonctionnement, la sécurité, et vous offrir la meilleure expérience utilisateur possible.</p>
+    <div id="button-container">
+      <button id="accept-button">Tout accepter</button>
+      <button id="reject-button">N'acceptez</button>
+      <button id="manage-button">Ouvrir les paramètres avancés</button>
+    </div>
+  </div>
+  <div id="cookie-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-button" class="close">&times;</span>
+      <h2>Paramètres avancés</h2>
+      <p class="parrafo-settings">Vous pouvez personnaliser vos préférences en matière de cookies ici. Activez ou désactivez les catégories suivantes et enregistrez votre sélection.</p>
+      <form>
+        <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="essential"> <b>Cookies essentiels</b><br>
+        <p class="descripcion-cookie">Les cookies essentiels sont essentiels pour le fonctionnement sûr et correct de notre site Web et du processus d'enregistrement.</p>
+      </div>
+      <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="functional"> <b>Cookies fonctionnels</b><br>
+        <p class="descripcion-cookie">Les cookies fonctionnels mémorisent vos préférences pour notre site Web et permettent sa personnalisation.</p>
+      </div>
+        <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="performance"> <b>
+          Cookies de performances</b><br>
+        <p class="descripcion-cookie">Les cookies de performance surveillent les performances de notre site Web.</p>
+      </div>
+      <div class="contenedor-opcion">
+        <input type="radio" name="cookie-option" value="marketing"> <b>Cookies marketing/tiers</b><br>
+        <p class="descripcion-cookie">Les cookies marketing nous permettent de mesurer et d'analyser les performances de notre site Web.</p>
+      </div>
+      </form>
+      <button id="save-button">Enregistrer</button>
+    </div>
+  </div>
 </main>
 <script src="../js/main.js"></script>
 </body>
