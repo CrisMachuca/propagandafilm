@@ -53,6 +53,7 @@ header.abajo {
 .contenido-banner h3 {
     font-size: 1.4em;
     font-weight: 400;
+    line-height: 30px;
 }
 .contenido-banner h3 span {
     font-weight: 600;
