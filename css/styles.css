@@ -284,6 +284,14 @@
      padding: 0;
  }
  
+
+ .dropdown-content {
+    display: none;
+  }
+  
+  .dropdown-content.active {
+    display: block;
+  }
  
  /* FOOTER */
  footer {
@@ -400,15 +408,13 @@
          height: 6vh; 
      }
      .dropdown a i {
-         transform: rotate(-90deg);
+         transform: rotate(0deg) !important;
          position: absolute;
          top: 15px;
          right: 10px;   
          font-size: 18px;
      }
-     .dropdown a i:active {
-         transform: rotate(0deg);
-     }
+    
      .dropdown-content {
          display: none;
          position: relative;

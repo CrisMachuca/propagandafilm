@@ -19,7 +19,27 @@ select.addEventListener('click', () => {
 });
 
 
+ // Obtén el elemento de la flecha
+ var arrow = document.querySelector('.arrow');
 
+ // Agrega un controlador de eventos al hacer clic en la flecha
+ arrow.addEventListener('click', function() {
+   // Obtén el elemento del submenú
+   var submenu = document.querySelector('.dropdown-content');
+
+   // Alternar la clase 'active' en el submenú para mostrarlo o ocultarlo
+   submenu.classList.toggle('active');
+
+   // Obtén el estado actual de la clase 'active' en el submenú
+   var isActive = submenu.classList.contains('active');
+
+   // Cambiar el ícono de la flecha hacia arriba o hacia abajo según el estado actual
+   if (isActive) {
+     arrow.innerHTML = '<i class="fas fa-angle-up"></i>';
+   } else {
+     arrow.innerHTML = '<i class="fas fa-angle-down"></i>';
+   }
+ });
 
 
 
