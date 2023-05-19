@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film in Spain Production Services | Propaganda Film  Services</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/stylescookies.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
@@ -210,7 +210,44 @@
         <p class="footer-text"><b>Languages: </b> <a href="index.html"> English</a> / <a href="fr/home.html"><u>Français</u></a></p><br>
       </div>
    </footer>
+   <!--
    <div id="cookie-banner">
+    <div class="banner-text">
+    <span class="close-btn">&times;</span>
+    <p>We use cookies to enable the proper functioning and security of our website, and to offer you the best possible user experience</p>
+    </div>
+    <div id="button-container">
+      <button id="accept-button">Accept All</button>
+      <button id="reject-button">Decline</button>
+      <button id="manage-button" style="background-color: #222222; color: #fff; text-decoration: underline; border: none">Open advanced settings</button>
+    </div>
+  </div>
+  <div id="cookie-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-button" class="close">&times;</span>
+      <h2>Advanced settings</h2>
+      <p class="parrafo-settings">You can customize your cookie preferences here. Enable or disable the following categories and save your selection.</p>
+      <form>
+        <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="essential"> <b>Essential cookies</b><br>
+        <p class="descripcion-cookie">The essential cookies are essential for the safe and correct operation of our website and the registration process.</p>
+      </div>
+      <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="functional"> <b>Functional cookies</b><br>
+        <p class="descripcion-cookie">Functional cookies remember your preferencies for our website and enable its customization.</p>
+      </div>
+        <div class="contenedor-opcion"><input type="radio" name="cookie-option" value="performance"> <b>Performance cookies</b><br>
+        <p class="descripcion-cookie">Performance cookies monitor the performance of our website.</p>
+      </div>
+      <div class="contenedor-opcion">
+        <input type="radio" name="cookie-option" value="marketing"> <b>Marketing/third part cookies</b><br>
+        <p class="descripcion-cookie">Marketing cookies allow us to measure and analyze the performance of our website.</p>
+      </div>
+      </form>
+      <button id="save-button">Save</button>
+    </div>
+  </div>
+  -->
+
+  <div id="cookie-banner">
     <div class="banner-text">
         <button class="close-button" onclick="closeBanner()">&times;</button>
         <p>We use cookies to enable the proper functioning and security of our website, and to offer you the best possible user experience</p>
@@ -224,7 +261,6 @@
     <div class="modal">
         <h3>Advanced Settings</h3>
         <p class="parrafo-settings">You can customize your cookie preferences here. Enable or disable the following categories and save your selection.</p>
-        
         <div class="checkbox">
             <input type="checkbox" id="essentialCookies" checked>
             <label for="essentialCookies"><b>Essential cookies</b></label>
@@ -245,11 +281,13 @@
             <label for="marketingCookies"><b>Marketing cookies</b></label>
             <p class="descripcion-cookie">Marketing cookies allow us to measure and analyze the performance of our website.</p>
         </div>
-        <button class="btn-save" onclick="saveSettings()">Save</button>
+        <button class="btn" onclick="saveSettings()">Save</button>
     </div>
 </div>
+
+
+
 </main>
-<script src="js/main.js"></script>
 <script src="js/JScookies.js"></script>
 
 
