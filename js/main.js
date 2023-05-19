@@ -220,3 +220,5 @@ if (cookieManaged === 'true') {
 window.addEventListener('cookiesManaged', function() {
   cookieBanner.style.display = 'none';
 });
+
+

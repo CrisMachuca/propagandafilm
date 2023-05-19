@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63ec4f579b.js" crossorigin="anonymous"></script>
-
+    <link href="css/lightbox.css" rel="stylesheet"/>
 </head>
 <body>
   <main>
@@ -135,14 +135,15 @@
 
 <section class="gallery">
 <div class="gallery-imgs">
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/beach-path.jpeg" alt=""></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/beach-sidewalk.jpg" alt=""></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/cliffs-view.jpg" alt=""></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/Cliffs.jpg" alt=""></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/cove-landing.jpg" alt=""></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/coves-cliff-caves.jpg" alt=""></div>
+  
+        <div class="gallery-img"><a href="imagenes/Locations/Sea/beach-path.jpeg" data-lightbox="roadtrip" ><img src="imagenes/Locations/Sea/beach-path.jpeg"></a></div>
+        <div class="gallery-img"><a href="imagenes/Locations/Sea/beach-sidewalk.jpg" data-lightbox="roadtrip"><img src="imagenes/Locations/Sea/beach-sidewalk.jpg"></a></div>
+        <div class="gallery-img"><a href="imagenes/Locations/Sea/cliffs-view.jpg" data-lightbox="roadtrip" ><img src="imagenes/Locations/Sea/cliffs-view.jpg"></a></div>
+        <div class="gallery-img"><a href="imagenes/Locations/Sea/Cliffs.jpg" data-lightbox="roadtrip"><img src="imagenes/Locations/Sea/Cliffs.jpg"></a></div>
+        <div class="gallery-img"><a href="imagenes/Locations/Sea/cove-landing.jpg" data-lightbox="roadtrip"><img src="imagenes/Locations/Sea/cove-landing.jpg"></a></div>
+        <div class="gallery-img"><img src="imagenes/Locations/Sea/coves-cliff-caves.jpg" alt="" ></div>
         <div class="gallery-img"><img src="imagenes/Locations/Sea/downtown-beach-promedade.jpg" alt=""></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/ensenada.jpg" alt=""></div>
+        <div class="gallery-img"><img src="imagenes/Locations/Sea/ensenada.jpg" alt="" ></div>
         <div class="gallery-img"><img src="imagenes/Locations/Sea/filming-at-beach.jpg" alt=""></div>
         <div class="gallery-img"><img src="imagenes/Locations/Sea/fishing-boats.jpg" alt=""></div>
         <div class="gallery-img"><img src="imagenes/Locations/Sea//foootprints-beach.jpg" alt=""></div>
@@ -162,8 +163,16 @@
         <div class="gallery-img"><img src="imagenes/Locations/Sea/white-fence-acces-to-the-beach.jpg" alt=""></div>
         <div class="gallery-img"><img src="imagenes/Locations/Sea/beach-path-OLD.jpg" alt=""></div>
         
+        
     </div>
+
+    
+
+
+
     </section>
+
+    
 
 </div>  
 
@@ -190,5 +199,7 @@
  </footer>
 </main>
 <script src="js/main.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
+
 </body>
 </html>

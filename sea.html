@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/63ec4f579b.js" crossorigin="anonymous"></script>
-
+    <link href="css/lightbox.css" rel="stylesheet"/>
 </head>
 <body>
   <main>
@@ -32,7 +32,7 @@
       </div>
 
       <div class="opciones" id="opciones">
-        <a href="index.html" class="opcion">
+        <a href="index.html" target="_blank" class="opcion">
           
           <div class="contenido-opcion">
             <img src="imagenes/gb.png" alt="Great Britain flag">
@@ -66,9 +66,9 @@
   </div>
 <header>
   
-  <a href="index.html">
-    <div class="header-logo">   
-    <img id="logo-img" src="imagenes/Home/Propaganda.png" alt="logotipo de la pagina">
+  <a href="home.html">
+    <div class="header-logo">
+    <img id="logo-img" src="../imagenes/Home/Propaganda.png" alt="logo">
     <p class="logo-text">Film<b>Services</b></p>
     </div>
   </a>
@@ -79,45 +79,49 @@
       &#8801
     </label> 
     
-  <nav class="menu">
-    <label for="check" class="esconder-menu">
-      &#215
-    </label>
-    <ul>
-      <li><a class="link" href="index.html">HOME</a></li>
-      <li><a class="link" href="about.html">ABOUT</a></li>
-      <li><a class="link" href="services.html">SERVICES</a></li>
-      <li class="dropdown">
-        <a class="dropbtn" href="locations.html"><b>LOCATIONS</b> </a>
-        <ul class="dropdown-content">
-      <li><a class="desplegable" href="land.html">Land</a></li>
-      <li><a class="desplegable" href="sea.html">Sea</a></li>
-      <li><a class="desplegable" href="sky.html">Sky</a></li>
+    <nav class="menu">
+      <label for="check" class="esconder-menu">
+        &#215
+      </label>
+      <ul>
+        <li><a class="link" href="index.html">HOME</a></li>
+        <li><a class="link" href="about.html">ABOUT</a></li>
+        <li><a class="link" href="services.html">SERVICES</a></li>
+        <li class="dropdown">
+          <a class="dropbtn" href="locations.html"><b>LOCATIONS</b> </a>
+          <ul class="dropdown-content">
+        <li><a class="desplegable" href="land.html">Land</a></li>
+        <li><a class="desplegable" href="sea.html">Sea</a></li>
+        <li><a class="desplegable" href="sky.html">Sky</a></li>
+      </ul>
+      <a class="arrow" href="#"><i class="fas fa-angle-down"></i></a>
+    </li>
+        <li><a class="link" href="contact.html">CONTACT</a></li>
+        <li class="language-menu-hamburguesa">
+          <div class="langboxes">
+            <a href="index.html"><div class="langbox1">
+            <img src="imagenes/gb.png" alt="Great Britain flag">
+            <h1 class="titulol">EN </h1>
+          </div></a>
+          <a href="fr/home.html">
+          <div class="langbox2">
+            <img src="imagenes/fr.svg" alt="France flag">
+            <h1 class="titulol">FR </h1>
+          </div></a> 
+        </div>     
+        </li>
+        <li>
+          <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details instamenu" ><i class="fa-brands fa-instagram"></i></a>
+        </li>
     </ul>
-    <a class="arrow" href="#"><i class="fas fa-angle-down"></i></a>
-  </li>
-      <li><a class="link" href="contact.html">CONTACT</a></li>
-      <li class="language-menu-hamburguesa">
-        <div class="langboxes">
-          <a href="index.html"><div class="langbox1">
-          <img src="imagenes/gb.png" alt="Great Britain flag">
-          <h1 class="titulol">EN </h1>
-        </div></a>
-        <a href="fr/home.html">
-        <div class="langbox2">
-          <img src="imagenes/fr.svg" alt="France flag">
-          <h1 class="titulol">FR </h1>
-        </div></a> 
-      </div>     
-      </li>
-      <li>
-        <a href="https://instagram.com/propagandafilm.tv/" target="_blank" class="btn contact-details instamenu" ><i class="fa-brands fa-instagram"></i></a>
-      </li>
-  </ul>
-  
-  </nav>
+    
+    </nav>
   
 </div>
+<div class="header-esconder-menu">
+  
+    
+  </div>
 </header>
 
 <script type="text/javascript">
@@ -130,7 +134,7 @@
 
 <section id="banner">
   <div class="contenido-banner">
-<h3 class="texto-encima-banner"><b>COSTAL</b> SCAPES</h3> <br>
+<h3 class="texto-encima-banner"><b>COASTAL</b> LANDSCAPES </h3> <br>
 <h3 class="texto-encima-banner2">Filmming in Spain | beaches</h3>
   </div>
 </section>
@@ -139,47 +143,38 @@
 
 <section class="gallery">
 <div class="gallery-imgs">
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/beach-path.jpeg" alt="beach path"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/beach-sidewalk.jpg" alt="beach sidewalk"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/cliffs-view.jpg" alt="cliffs views"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/Cliffs.jpg" alt="cliffs"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/cove-landing.jpg" alt="cove landing"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/coves-cliff-caves.jpg" alt="coves cliffs caves"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/downtown-beach-promedade.jpg" alt="downtown beach promenade"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/ensenada.jpg" alt="ensenada"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/filming-at-beach.jpg" alt="filming at beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/fishing-boats.jpg" alt="fishing boats"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea//foootprints-beach.jpg" alt="footprints beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/Gaztelugatxe.jpg" alt="Gaztelugatxe"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/horizon-cliff-views-at-sunset.jpg" alt="horizon cliff views at sunset"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/low-tide-shore.jpg" alt="low tide shore"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/Marbella Wood Pier.jpg" alt="Marbella Wood Pier"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/Morro-beach.jpg" alt="Morro beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/ocean-cliffs.jpg" alt="ocean cliffs"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/palmtrees-beach.jpg" alt="palmtrees beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/red-sunset-beach.jpg" alt="red sunset beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/Sand-and-sea-horizon.jpg" alt="sand and sea horizon"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/sunset-at-the-beach.jpg" alt="sunset at beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/sunset-at-surf-beach.jpg" alt="sunset at surf beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/sunset-surfer.jpg" alt="sunset surfer"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/sunsett.jpg" alt="sunset"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/white-fence-acces-to-the-beach.jpg" alt="white fence acces to the beach"></div>
-        <div class="gallery-img"><img src="imagenes/Locations/Sea/beach-path-OLD.jpg" alt="beach path old"></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/beach-path.jpeg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/beach-path.jpeg" alt="beach path"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/beach-sidewalk.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/beach-sidewalk.jpg" alt="beach sidewalk"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/cliffs-view.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/cliffs-view.jpg" alt="cliffs views"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/Cliffs.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/Cliffs.jpg" alt="cliffs"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/cove-landing.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/cove-landing.jpg" alt="cove landing"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/coves-cliff-caves.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/coves-cliff-caves.jpg" alt="coves cliffs caves"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/downtown-beach-promedade.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/downtown-beach-promedade.jpg" alt="downtown beach promenade"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/ensenada.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/ensenada.jpg" alt="ensenada"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/filming-at-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/filming-at-beach.jpg" alt="filming at beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/fishing-boats.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/fishing-boats.jpg" alt="fishing boats"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea//foootprints-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea//foootprints-beach.jpg" alt="footprints beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/Gaztelugatxe.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/Gaztelugatxe.jpg" alt="Gaztelugatxe"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/horizon-cliff-views-at-sunset.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/horizon-cliff-views-at-sunset.jpg" alt="horizon cliff views at sunset"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/low-tide-shore.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/low-tide-shore.jpg" alt="low tide shore"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/Marbella Wood Pier.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/Marbella Wood Pier.jpg" alt="Marbella Wood Pier"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/Morro-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/Morro-beach.jpg" alt="Morro beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/ocean-cliffs.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/ocean-cliffs.jpg" alt="ocean cliffs"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/palmtrees-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/palmtrees-beach.jpg" alt="palmtrees beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/red-sunset-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/red-sunset-beach.jpg" alt="red sunset beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/Sand-and-sea-horizon.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/Sand-and-sea-horizon.jpg" alt="sand and sea horizon"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/sunset-at-the-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/sunset-at-the-beach.jpg" alt="sunset at beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/sunset-at-surf-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/sunset-at-surf-beach.jpg" alt="sunset at surf beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/sunset-surfer.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/sunset-surfer.jpg" alt="sunset surfer"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/sunsett.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/sunsett.jpg" alt="sunset"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/white-fence-acces-to-the-beach.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/white-fence-acces-to-the-beach.jpg" alt="white fence acces to the beach"></a></div>
+  <div class="gallery-img"><a href="../imagenes/Locations/Sea/beach-path-OLD.jpg" data-lightbox="sea"><img src="../imagenes/Locations/Sea/beach-path-OLD.jpg" alt="beach path old"></a></div>
+  
         
     </div>
     </section>
 
 </div>  
-
-    
-    
-
-  <!--ATAJO PARA HACER UNA GALERIA, todo esto que aparece abajo de este comentario desde el h1 hasta que se cierre
-  el DIV se puede hacer con este atajo:
-  .gallery-container>.gallery__item*8>img.gallery__img[src="imagenes/Locations/Land/Architecture/imagen$.jpg"] y justo después pulsar la tecla TAB
--->
-
-
 
 
 <footer>
@@ -188,12 +183,12 @@
     <p>Sitemap:</p><br>
     <section class="sitemap">
       <ul>
-        <li><a class="sitemap-link" href="index.html"><b>Home</b></a></li>
-        <li><a class="sitemap-link" href="about.html">About</a></li>
-        <li><a class="sitemap-link" href="services.html">Services</a></li>
-        <li><a class="sitemap-link" href="locations.html">Locations</a></li>
-        <li><a class="sitemap-link" href="contact.html">Contact</a></li>
-        </ul>
+        <li><a class="sitemap-link" href="index.html">home</a></li>
+          <li><a class="sitemap-link" href="about.html">About</a></li>
+          <li><a class="sitemap-link" href="services.html">Services</a></li>
+          <li><a class="sitemap-link" href="locations.html">Locations</a></li>
+          <li><a class="sitemap-link" href="contact.html">Contact</a></li>
+        </ul> 
         <br>
     </section>
   </div>
@@ -205,5 +200,6 @@
  </footer>
 </main>
 <script src="js/main.js"></script>
+<script src="js/lightbox-plus-jquery.js"></script>
 </body>
 </html>
