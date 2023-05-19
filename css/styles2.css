@@ -290,7 +290,7 @@ a .texto-secciones {
   margin-bottom: 14px;
 }
 
-.btn {
+.btn-banner {
   height: 45px;
   margin-right: 1em;
   font-family: 'Opensans';
@@ -303,7 +303,7 @@ a .texto-secciones {
   background-color: #ffffff;
   cursor: pointer;
 }
-.btn:hover {
+.btn-banner:hover {
   background-color: #222222;
   border: solid #e0e0e0 2px;
   color: #ffffff;
