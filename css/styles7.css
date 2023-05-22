@@ -78,7 +78,7 @@ header.abajo {
     padding-bottom: 2%;
  }
  .galerias {
-    margin: 4% 17%;
+    margin: 4% 5%;
    
  }
  
@@ -89,7 +89,7 @@ header.abajo {
     margin-left: -2%;
 }
 .gallery-img {
-    height: 20vh;
+    height: 30vh;
     flex-grow: 1;
     margin: 0 0 2% 2%;
 }
@@ -99,6 +99,16 @@ header.abajo {
     object-fit: cover;
     border-radius: 5px;
 }
+
+/* Ajuste para dispositivos móviles en posición horizontal */
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .gallery-img {
+      height: 30vh; /* Ajusta la altura de las imágenes */
+      flex-basis: 100%; /* Ocupa todo el ancho disponible */
+    }
+  }
+
+
 .gallery-img:nth-child(4n+1) {
     flex-basis: 20vw;
     
@@ -122,7 +132,9 @@ header.abajo {
  
 
  /* RESPONSIVE */
-   
+  
+ 
+
    
  @media only screen and (max-width: 769px){
  
