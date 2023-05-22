@@ -78,7 +78,7 @@ header.abajo {
     padding-bottom: 2%;
  }
  .galerias {
-    margin: 4% 5%;
+    margin: 4% 17%;
    
  }
  
@@ -89,7 +89,7 @@ header.abajo {
     margin-left: -2%;
 }
 .gallery-img {
-    height: 30vh;
+    height: 20vh;
     flex-grow: 1;
     margin: 0 0 2% 2%;
 }
