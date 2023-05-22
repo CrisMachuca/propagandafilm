@@ -59,6 +59,7 @@ header.abajo {
      padding-top: 20px;
      border-bottom: 2px solid white;
      border-top: 2px solid white;
+     line-height: 30px;
      width: fit-content; /* para ajustar las lineas al tamaño del texto */
  }
  .texto-encima-banner2 {
