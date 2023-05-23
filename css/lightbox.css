@@ -28,6 +28,7 @@ body.lb-disable-scrolling {
 .lightbox .lb-image {
   display: block;
   width: 100%;
+  min-width: 500px;
   height: auto;
   object-fit: cover;
   border-radius: 3px;
