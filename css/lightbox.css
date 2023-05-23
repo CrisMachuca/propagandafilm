@@ -17,6 +17,7 @@ body.lb-disable-scrolling {
   position: absolute;
   left: 0;
   width: 100%;
+  height: 100%;
   z-index: 10000;
   text-align: center;
   line-height: 0;
@@ -26,9 +27,8 @@ body.lb-disable-scrolling {
 
 .lightbox .lb-image {
   display: block;
-  min-width: 98vw;
+  min-width: 100%;
   height: 100%;
-  
   object-fit: cover;
   border-radius: 3px;
 
@@ -43,8 +43,8 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   position: relative;
-  *zoom: 1;
-  width: 100%;
+  zoom: 100%;
+  width: auto;
   height: auto;
   margin: 0 auto;
   border-radius: 4px;
