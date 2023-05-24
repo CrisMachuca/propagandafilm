@@ -386,8 +386,9 @@
          display: block;
      }
      .mostrar-menu {
-         position:absolute;
+         position: relative;
          right: 5%;
+         top: 1%;
          color: #3D3E3B;
      }
      .menu{
