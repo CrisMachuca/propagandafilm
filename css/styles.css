@@ -193,6 +193,16 @@
      padding-top: 2%;
      overflow: hidden;      
  }
+ @media screen and (orientation: landscape) {
+    nav ul {
+      overflow-y: auto; /* Agrega scroll vertical si el contenido supera la altura */
+    }
+    .menu{
+        height: 100%; 
+    }
+   
+   
+  }
  nav ul li a, .dropbtn {
      display: inline-block;
      color: #3D3E3B;
