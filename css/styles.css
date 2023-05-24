@@ -201,7 +201,9 @@
     .menu{
         height: 100%; 
     }
-   
+    nav ul li.dropdown {
+        height: auto;
+    }
    
   }
  nav ul li a, .dropbtn {
@@ -214,6 +216,7 @@
  nav ul li.dropdown {
      display: inline-block;
      transition: 0.8s;
+     
  }
  .dropdown-content {
      display: none;
