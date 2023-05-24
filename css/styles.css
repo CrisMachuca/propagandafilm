@@ -197,6 +197,7 @@
     nav ul {
       overflow-y: auto; /* Agrega scroll vertical si el contenido supera la altura */
       overflow-x: auto;
+      
     }
     .menu{
         height: 100%; 
@@ -392,13 +393,13 @@
      .menu{
          position: fixed;
          display:flex;
-         width: 80%;
-         height: 100vh;
+         width: 100%;
+         height: 100%;
          right: -100%;
          top: 0;
          background-color: #fff;
          text-align: left;
-         padding: 100px 0;
+         padding: 40px 0 !important;
          z-index: 100;  
      }
      nav ul {
@@ -407,6 +408,7 @@
          margin-left: 5%;
          padding: 25px 25px;
          margin: 0 ;  
+         
      }
      .menu a{
          display:flex;
@@ -460,7 +462,7 @@
        }
      .esconder-menu{
          position: absolute;
-         top: 40px;
+         top: 20px !important;
          right: 10%;
          color: rgb(190, 188, 188);
          font-size: 2em;
