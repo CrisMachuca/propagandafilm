@@ -16,6 +16,8 @@ body.lb-disable-scrolling {
 .lightbox {
   position: absolute;
   left: 0;
+  display: grid;
+  place-items: center;
   width: 100%;
   z-index: 10000;
   text-align: center;
@@ -28,8 +30,9 @@ body.lb-disable-scrolling {
 .lightbox .lb-image {
   display: block;
   width: 100%;
-  min-width: 500px;
-  height: auto;
+  min-width: 50vw;
+  height: auto !important;
+  max-height: 88vh;
   object-fit: cover;
   border-radius: 3px;
 
