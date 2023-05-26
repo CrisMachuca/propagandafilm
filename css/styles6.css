@@ -40,6 +40,7 @@ header.abajo {
  .contenido-banner {
      
      position: absolute;
+     top: 0;
      right: 10%;
      bottom: -30%;
      line-height: 2vh;
@@ -50,17 +51,22 @@ header.abajo {
      flex-direction: column;
      justify-content: center;
      padding-left: 10%;
+     
  }
  .texto-encima-banner {
-     font-size: 1.8em;
-     font-weight: 400;
-     padding-bottom: 20px;
-     padding-top: 20px;
-     border-bottom: 2px solid white;
-     border-top: 2px solid white;
-     width: fit-content; /* para ajustar las lineas al tamaño del texto */
+    position: relative;
+    bottom: -20%;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    width: fit-content; /* para ajustar las lineas al tamaño del texto */
  }
  .texto-encima-banner2 {
+    position: relative;
+    bottom: -20%;
     font-size: 1.8em;
     font-weight: 400;
     line-height: 30px;
@@ -138,11 +144,23 @@ header.abajo {
         
      }
   }
+    @media screen and (max-width: 899px) {
+  #banner {
+    height: 55vh;
+    
+     }
+    }
+    @media screen and (max-width: 599px) {
+        #banner {
+          height: 40vh;
+          
+           }
+          }
   
   @media only screen and (max-width: 389px) {
    
     .gallery-img:nth-child(5n+2) {
-        flex-basis: 64vw;
+        flex-basis: 20vw;
         
     }
     .gallery-img:nth-child(5n+3) {
@@ -186,19 +204,19 @@ header.abajo {
         
     }
     .gallery-img:nth-child(5n+2) {
-        flex-basis: 44vw;
+        flex-basis: 40vw;
         
     }
     .gallery-img:nth-child(5n+3) {
-        flex-basis: 36vw;
+        flex-basis: 40vw;
         
     }
     .gallery-img:nth-child(5n+4) {
-        flex-basis: 48vw;
+        flex-basis: 40vw;
         
     }
     .gallery-img:nth-child(5n+4) {
-        flex-basis: 34vw;
+        flex-basis: 40vw;
         
     }
     .gallery-img:last-child {
