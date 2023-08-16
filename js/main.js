@@ -21,12 +21,12 @@ select.addEventListener('click', () => {
 
  // Obtén el elemento de la flecha
  var arrow = document.querySelector('.arrow');
-
+if (arrow) {
  // Agrega un controlador de eventos al hacer clic en la flecha
  arrow.addEventListener('click', function() {
    // Obtén el elemento del submenú
    var submenu = document.querySelector('.dropdown-content');
-
+  
    // Alternar la clase 'active' en el submenú para mostrarlo o ocultarlo
    submenu.classList.toggle('active');
 
@@ -40,7 +40,7 @@ select.addEventListener('click', () => {
      arrow.innerHTML = '<i class="fas fa-angle-down"></i>';
    }
  });
-
+}
 
 
 
@@ -163,17 +163,11 @@ saveButton.addEventListener("click", saveCookieOption);
 const closeBtn = document.querySelector('.close-btn');
 const cookieBanner = document.querySelector('#cookie-banner');
 
+
 closeBtn.addEventListener('click', function() {
   cookieBanner.style.display = 'none';
 });
 
-// Función para establecer una cookie
-function setCookie(name, value, days) {
-  const expirationDate = new Date();
-  expirationDate.setDate(expirationDate.getDate() + days);
-  const cookieValue = encodeURIComponent(value) + '; expires=' + expirationDate.toUTCString() + '; path=/';
-  document.cookie = name + '=' + cookieValue;
-}
 
 // Función para establecer una cookie
 function setCookie(name, value, days) {
@@ -205,7 +199,6 @@ if (cookieManaged === 'true') {
   // Mostrar el banner de cookies y añadir el evento de cierre al botón de cierre
   cookieBanner.style.display = 'block';
 
-  const closeBtn = document.querySelector('.close-btn');
   closeBtn.addEventListener('click', function() {
     setCookie('cookies_managed', 'true', 365); // Establecer la cookie para indicar que las cookies han sido gestionadas
     cookieBanner.style.display = 'none';
@@ -220,5 +213,11 @@ if (cookieManaged === 'true') {
 window.addEventListener('cookiesManaged', function() {
   cookieBanner.style.display = 'none';
 });
+
+
+
+// CARRUSEL //
+
+
 
 

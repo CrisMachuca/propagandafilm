@@ -162,12 +162,14 @@
      display: flex;
      flex-direction: row;
      position: absolute;
-     padding-top: 0;
+     padding-top: 1px;
+     padding-bottom: 1%;
      margin-left: 2.7%;
  }
  #logo-img {
      height: 6vh;
  }
+ 
  .logo-text {
      font-weight: 200;
      color: #3D3E3B;
@@ -194,6 +196,7 @@
      overflow: hidden;      
  }
  @media screen and (orientation: landscape) {
+    
     nav ul {
       overflow-y: auto; /* Agrega scroll vertical si el contenido supera la altura */
       overflow-x: auto;
@@ -201,6 +204,8 @@
     }
     .menu{
         height: 100%; 
+        padding-left: 2%;
+        
     }
     nav ul li.dropdown {
         height: auto;
@@ -242,9 +247,10 @@
  a, a:visited {
      text-decoration: none;
      color: #3D3E3B;
-     font-size: 14px;
+     font-size: 18px;
      padding: 0 0 1px;
-     font-family: 'josefine';
+     font-family: 'metropolis';
+     font-weight: bold;
  }
  .mostrar-menu, .esconder-menu {
      font-size: 50px;
@@ -319,6 +325,8 @@
      color: #FFFFFFB3;
      padding: 1%;
      font-size: 0.9em;
+     
+     
  }
  .footer-left {
      margin-left: 1%;
@@ -390,6 +398,7 @@
          right: 5%;
          top: 1%;
          color: #3D3E3B;
+         z-index: 10;
      }
      .menu{
          position: fixed;
