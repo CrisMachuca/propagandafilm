@@ -529,6 +529,9 @@ a .texto-secciones {
   .CSSgal {
     width: 100%;
   }
+  .CSSgal .slider h2, .CSSgal .slider h4 {
+    font-size: 1.3em;
+  }
 }
 
 
