@@ -169,6 +169,11 @@
  #logo-img {
      height: 6vh;
  }
+ @media screen and (orientation:landscape) {
+    #logo-img {
+        height: 50px;
+    }
+ }
  
  .logo-text {
      font-weight: 200;
