@@ -98,7 +98,7 @@ header.abajo {
      padding-right: 10%;
  }
  .contenido-banner h3 {
-     font-size: 1.8em;
+     font-size: 4em;
      font-weight: 400;
      padding-bottom: 20px;
      padding-top: 20px;
@@ -134,13 +134,13 @@ header.abajo {
  }
  .parrafo {
      font-family: 'metropolis';
-     font-size: 18px;
+     font-size: 1.3em;
      font-weight: lighter;
      line-height : 30px;
      color: #fff;
      
  }
- 
+
 
  /*  GALERIA*/
  
@@ -159,11 +159,12 @@ header.abajo {
     justify-content: center;
     padding: 3% 14% 3% 14%;
     font-family: 'metropolis';
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: lighter;
      line-height : 30px;
      color: #282828;
    }
+   
    .galeria {
      width: 100%;
      height: auto;

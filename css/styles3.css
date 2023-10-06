@@ -72,13 +72,13 @@ header.abajo {
  .titulo {
      color: black;
      font-family: 'josefine';
-     font-size: 25px;
+     font-size: 2em;
      padding-bottom: 20px;
      
  }
  .parrafo {
     font-family: 'metropolis';
-     font-size: 18px;
+     font-size: 1.3em;
      font-weight: lighter;
      line-height : 30px;
      color: black;
@@ -100,6 +100,10 @@ header.abajo {
         background-color: transparent;
         padding-top: 10px;
         height: 20px;
+     }
+     #texto-principal {
+        padding: 5% 7%;
+        text-align: justify;
      }
     
 }
