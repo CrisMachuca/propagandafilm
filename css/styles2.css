@@ -15,7 +15,7 @@ body {
   min-width: 100vw;
 }
 main {
-  background-image: radial-gradient(circle at 0.72% 58.69%, #ffffff 0, #faffff 12.5%, #f5faff 25%, #eff3f6 37.5%, #ebeae9 50%, #e7e1dc 62.5%, #e4d9d1 75%, #e2d1c6 87.5%, #e1c9be 100%);
+  /*background-image: radial-gradient(circle at 0.72% 58.69%, #ffffff 0, #faffff 12.5%, #f5faff 25%, #eff3f6 37.5%, #ebeae9 50%, #e7e1dc 62.5%, #e4d9d1 75%, #e2d1c6 87.5%, #e1c9be 100%);
   background-size: cover; /*Para que la imagen rellene todo el espacio y se vea completa*/
   background-position: center;
 }
@@ -119,7 +119,7 @@ header.abajo {
 .contenedor1 {
   display: flex;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 70%;
   justify-content: center;
   text-align: center;
   gap: 4em;
@@ -133,11 +133,13 @@ header.abajo {
   margin-right: 0;
   margin-bottom: 2em;
 }
-
+.flecha {
+  color: #DA0037
+}
 .contenedor1b {
   
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   height: fit-content;
   margin-top: 5%;
   display: flex;
@@ -182,6 +184,14 @@ header.abajo {
   margin-top: 3em;
   margin-bottom: 3em;
 }
+.wrap {
+  color: #fff;
+  text-align: center;
+  padding: 2rem 3rem;
+  border: 1px solid #fff;
+  box-shadow: 0 0 25px #222;
+  backdrop-filter: blur(3px);
+}
 .contenedor2 {
   display: flex;
   flex-wrap: nowrap;
@@ -190,7 +200,7 @@ header.abajo {
   text-align: center;
   gap: 4em;
   padding: 2em 0;
-  
+
 }
 
  
@@ -249,18 +259,9 @@ header.abajo {
   height: 100%;
   color: white;
   transform: rotateY(180deg);
-  font-size: 2vw;
+  font-size: 1vw;
 }
 .flip-card-back h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 60%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.flip-card-back p {
   text-align: center;
   margin: 0;
   padding: 0;
@@ -268,6 +269,24 @@ header.abajo {
   bottom: 50%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 2.5vw;
+}
+
+.flip-card-back a {
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #DA0037;
+  color: white;
+  font-family: 'metropolis';
+  border-radius: 5px;
+  border:none;
+  width: 6em;
+  font-size: 2.5vw;
 }
 
 .flip-card-front img {
@@ -279,7 +298,7 @@ header.abajo {
 
 @media screen and (max-width: 700px){
   .flip-card-back {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -308,19 +327,22 @@ header.abajo {
 }
 
 .boton {
-  width: 40%;
+  width: 50%;
   background-color: #171717;
   padding: 3%;
   border: none;
   border-radius: 5px;
   margin-top: 10%;
+  font-size: 1.3em;
 }
 .boton a {
   color: white;
   font-family: 'metropolis';
   font-size: 1em;
 }
-
+.flecha {
+  color: #DA0037
+}
 
 /* Media queries */
 @media screen and (max-width: 899px) {
@@ -346,6 +368,12 @@ header.abajo {
     /*
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     */
+  }
+  .contenedor-medio{
+    padding: 3em 10%;
+  }
+  .wrap{
+    padding: 2rem 0;
   }
   .contenedor2 {
     flex-direction: column;
@@ -738,20 +766,24 @@ a .texto-secciones {
   margin-bottom: 6%;
   margin-top: 1%;
   background-color: white;
+  display: flex; 
+  align-items: center;
+  
 }
 .clients-text {
   color: #000;
   margin-left: 4%;
   font-family: 'metropolis';
   font-size: 4em;
-  margin-top: 2%;
-  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  
   text-align: center;
 }
 /* Estilos para el carrusel */
 .carousel {
   display: flex; /* Hace que las imágenes sean mostradas en una línea horizontal */
-  animation: carouselAnimation 10s linear infinite; /* Configura la animación */
+  animation: carouselAnimation 20s linear infinite; /* Configura la animación */
   
 }
 
@@ -1108,8 +1140,8 @@ a .texto-secciones {
         display: block;
     }
     .mostrar-menu {
-        position:absolute;
-        right: 5%;
+        position: absolute;
+        right: 10%;
         color: #3D3E3B;
     }
     .menu{
