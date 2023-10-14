@@ -32,7 +32,7 @@ header.abajo {
     width: 100%;
     padding: 0 50px;
     background-image: url(../imagenes/Services/Camera-car-crane-with-hot-head-flip.jpg);
-    height: 97vh;
+    height: 70vh;
     background-size: cover; /*Para que la imagen rellene todo el espacio y se vea completa*/
     background-position: center;
 }

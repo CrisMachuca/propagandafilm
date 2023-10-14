@@ -136,9 +136,149 @@ header.abajo {
      font-size: 1.3em;
      font-weight: lighter;
      line-height : 30px;
-     color: #fff;
-     
+     color: #fff;   
  }
+
+ .boton {
+  width: 50%;
+  background-color: #171717;
+  padding: 3%;
+  border: none;
+  border-radius: 5px;
+  
+  font-size: 1.3em;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.boton a {
+  color: white;
+  font-family: 'metropolis';
+  font-size: 1em;
+}
+.flecha {
+  color: #DA0037
+}
+
+ /* NUEVO */
+
+ .contenedor1 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    gap: 5em;
+    padding: 2em 0 2em 0;
+    margin-top: 5%;
+    
+  }
+  
+  .contenedor1b {
+    width: 50%;
+    max-width: 500px;
+    
+    margin-bottom: 2em;
+  }
+  
+  .contenedor1a {
+    
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    
+  }
+  
+  .contenedor1a::before {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Establece la relación de aspecto */
+    
+  }
+  
+  .contenedor1a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 3px dashed #000;
+    margin: 0;
+    padding: 1%;
+    /*
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    */
+  }
+
+/* SUPER GALERIA */
+
+.super-galeria {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("../imagenes/bg/background.jpg");
+  overflow: hidden;
+  padding: 1em 0;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px 50px;
+  grid-template-areas: "image" "text";
+  border-radius: 18px;
+  background-color:#fff;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin: 2%;
+  border-bottom: 10px solid #DA0037;
+}
+
+.card-img {
+  grid-area: image;
+  background: url("../imagenes/Home/white-fence-acces-to-the-beach.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+  color: #000;
+  font-weight: 800;
+  font-size: 1.5em;
+  margin: auto;
+}
+a.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card2*/
+.card-img.card2 {
+  background: url("../imagenes/Home/stone-bridge.jpg");
+  background-size: cover;
+  
+}
+
+/*card3*/
+.card-img.card3 {
+  background: url("../imagenes/Home/Sky.jpg");
+  background-size: cover;
+}
+
+
 
 
  /*  GALERIA*/
@@ -154,15 +294,25 @@ header.abajo {
      
    }
    .texto-heading {
-    text-align: center;
+    text-align: justify;
     justify-content: center;
-    padding: 3% 14% 3% 14%;
+    padding: 3% 10%;
     font-family: 'metropolis';
     font-size: 1.3em;
     font-weight: lighter;
      line-height : 30px;
      color: #282828;
    }
+   .titulo-heading{
+    text-align: justify;
+    justify-content: center;
+    padding: 1% 10% 3% 10%;
+    color: #000;
+    font-family: 'josefine';
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    text-align: left;
+    }
    
    .galeria {
      width: 100%;
@@ -425,6 +575,29 @@ header.abajo {
     .fa-brands {
         color: rgb(190, 188, 188);
     }
+    .contenedor1 {
+        flex-direction: column;
+        width: 90%;
+      }
+      .contenedor1b {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+      }
+      .boton {
+        width: 70%;
+        
+      }
+      .contenedor1a {
+        width: 100%;
+        border-radius: 50%;
+      }
+      .contenedor1b img {
+        border-radius: 50%;
+        /*
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        */
+      }
 }
 
 
