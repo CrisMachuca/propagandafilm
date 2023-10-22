@@ -190,7 +190,8 @@
      right: 2%;
      background-color: transparent;
      padding-right: 0;
-     color: #3D3E3B;   
+     color: #3D3E3B; 
+     
  }
  nav ul {
      display: flex;
@@ -198,7 +199,8 @@
      padding: 0;
      margin: auto ;
      padding-top: 2%;
-     overflow: hidden;      
+     overflow: hidden; 
+        
  }
  @media screen and (orientation: landscape) {
     
@@ -219,10 +221,11 @@
   }
  nav ul li a, .dropbtn {
      display: inline-block;
-     color: #3D3E3B;
+     color: #000;
      text-align: center;
      padding: 14px 16px;
      text-decoration: none;
+     
  }
  nav ul li.dropdown {
      display: inline-block;

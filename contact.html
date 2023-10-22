@@ -123,48 +123,57 @@
     header.classList.toggle("abajo",window.scrollY>0);
   })
 </script>
+
 <section id="banner">
   <div class="contenido-banner">
-    <h1 class="contact-title">CONTACT</h1>
-    <span class="text1">Please fill the form below and we´ll contact you right away</span>
+    <h1 class="contact-title">CONTACT</h1> 
 </div>
 </section>
 
+<p class="text1">Please fill the form below and <span class="destacado">we´ll contact you</span> right away</p>
 <section id="contacto">
     
-    
-    <form class="formulario-contacto" action="formulario.php" target="" method="post" name="formDatosPersonales">
-        
+
+    <form class="formulario-contacto" autocomplete="on" action="formulario.php" target="" method="post" name="formDatosPersonales">
+      
         <ul style="list-style: none;">
           <li>
-            <input type="text" name="name" id="nombre"required/>
+            <input type="text" name="name" id="nombre" required autocomplete="name"/>
             <label class="campo1" for="nombre">Your Name*</label>
         
           </li>
           <li>
-            <input type="text" name="company" id="company"/>
+            <input type="text" name="company" id="company" autocomplete="company"/>
             <label class="campo2" for="company">Your Company</label>
         
       </li>
       <li>
-        <input type="email" name="email" id="email" required />
+        <input type="email" name="email" id="email" required autocomplete="email"/>
         <label class="campo3" for="email">Email*</label>
         
       </li>
       <li>
-        <input type ="tel" name="phone" id="phone"/>
+        <input type="tel" name="phone" id="phone" autocomplete="tel"/>
         <label class="campo4" for="phone">Phone number</label>
         
       </li>
       <li>
-        <textarea name="mensaje" for="mensaje" maxlength="300" required></textarea>
+        <textarea name="mensaje" id="mensaje" maxlength="300" required autocomplete="off"></textarea>
         <label class="campo5" for="mensaje">Message</label>
         
       </li>
       </ul>
         <input type="submit" name="enviar" value="Submit"/>
     </form>
-
+    
+    <div class="form-right">
+      <img src="imagenes/Services/film-crew-at-work-5.jpg">
+      <h3>PROPAGANDA FILM</h3>
+      <p>Follow Us</p>
+      <a href="https://facebook.com/propagandafilm.tv/" target="_blank"><i class="fa-brands fa-facebook"> FACEBOOK</i></a><br>
+      <a href="https://instagram.com/propagandafilm.tv/" target="_blank"><i class="fa-brands fa-instagram"> INSTAGRAM</i></a>
+     
+    </div>
   
 </section>
 

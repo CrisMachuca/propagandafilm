@@ -124,36 +124,41 @@
   })
 </script>
 
-<section class="empty"></section>
-<section id="contacto">
+<section id="banner">
+  <div class="contenido-banner">
     <h1 class="contact-title">CONTACT</h1>
-    <span class="text1">Veuillez remplir le formulaire ci-dessous et nous vous contacterons promptement</span>
+</div>
+</section>
+
+<p class="text1">Veuillez remplir le formulaire ci-dessous et <span class="destacado">nous vous contacterons</span> promptement</p>
+
+<section id="contacto">
     
-    <form class="formulario-contacto" action="formulario.php" target="" method="post" name="formDatosPersonales">
+    <form class="formulario-contacto" autocomplete="on" action="formulario.php" target="" method="post" name="formDatosPersonales">
         
         <ul style="list-style: none;">
           <li>
-            <input type="text" name="name" id="nombre"required/>
+            <input type="text" name="name" id="nombre"required autocomplete="name"/>
             <label class="campo1" for="nombre">Votre nom*</label>
         
           </li>
           <li>
-            <input type="text" name="company" id="company"/>
+            <input type="text" name="company" id="company" autocomplete="company"/>
             <label class="campo2" for="company">Votre societé</label>
         
       </li>
       <li>
-        <input type="email" name="email" id="email" required />
+        <input type="email" name="email" id="email" required autocomplete="email"/>
         <label class="campo3" for="email">Email*</label>
         
       </li>
       <li>
-        <input type ="tel" name="phone" id="phone"/>
+        <input type="tel" name="phone" id="phone" autocomplete="tel"/>
         <label class="campo4" for="phone">Nº de téléphone</label>
         
       </li>
       <li>
-        <textarea name="mensaje" for="mensaje" maxlength="300" required></textarea>
+        <textarea name="mensaje" for="mensaje" maxlength="300" required autocomplete="off"></textarea>
         <label class="campo5" for="mensaje">Message*</label>
         
       </li>
@@ -161,6 +166,14 @@
         <input type="submit" name="enviar" value="Envoyer"/>
     </form>
 
+    <div class="form-right">
+      <img src="../imagenes/Services/film-crew-at-work-5.jpg">
+      <h3>PROPAGANDA FILM</h3>
+      <p>Suivez-nous</p>
+      <a href="https://facebook.com/propagandafilm.tv/" target="_blank"><i class="fa-brands fa-facebook"> FACEBOOK</i></a><br>
+      <a href="https://instagram.com/propagandafilm.tv/" target="_blank"><i class="fa-brands fa-instagram"> INSTAGRAM</i></a>
+     
+    </div>
   
 </section>
 
