@@ -151,7 +151,7 @@ header.abajo {
    object-fit: cover;
    border-radius: 50%;
    position: absolute;
-   top: 0;
+   top: 30%;
    left: 0;
    outline: 3px dashed #000;
    margin: 0;
